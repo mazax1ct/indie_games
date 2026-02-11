@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="INDIE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="INDIE">
+            </div>
+    
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Категории</a>
+    
+                        <div class="sub-menu">
+                            <div class="sub-menu__inner container">
+                                <p class="sub-menu__title">Жанр</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/rpg.svg" alt="">Ролевые игры</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/strategy.svg" alt="">Стратегии</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/adventure.svg" alt="">Приключение</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/racing.svg" alt="">Гонки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/sport.svg" alt="">Спорт</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/action.svg" alt="">Экшн</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/arcade.svg" alt="">Аркада</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/puzzle.svg" alt="">Головоломки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/kids.svg" alt="">Детские</a></li>
+                                </ul>
+    
+                                <p class="sub-menu__title">Платформа</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/win.svg" alt="">Windows</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/macos.svg" alt="">MacOS</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/android.svg" alt="">Android</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/ios.svg" alt="">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Статьи</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Премиум аккаунт</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="header__search-opener" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="notifications" type="button" title="Уведомления">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#bell_icon" />
+                    </svg>
+    
+                    <span class="notifications__counter">10</span>
+                </button>
+    
+                <div class="header__balance">1 530₽</div>
+    
+                <a class="user-link" href="#">
+                    <span class="user-link__avatar">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user_icon" />
+                        </svg>
+                    </span>
+    
+                    <span class="user-link__text">Войти</span>
+    
+                    <span class="user-link__badge user-link__badge--pro">PRO</span>
+                </a>
+    
+                <button class="js-mobile-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs breadcrumbs--default">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Статьи</a></li>
+                <li class="breadcrumbs__item">Что такое инди игры простыми словами</li>
+            </ul>
+
+            <section class="article">
+                <p class="article__author">
+                    <small>Автор статьи:</small> Александр Анисин
+                </p>
+
+                <h1>Пополнение кошелька Steam через PayBerry зачисляло на аккаунт больше средств, чем отправлялось</h1>
+
+                <p>Полная история: от сбоев сервиса из-за ажиотажа до полного отключения функции.</p>
+                <p>8 марта, дополняя инструкцию по платежам в Steam из России, мы обнаружили, что при пополнении кошелька лаунчера через платёжную систему PayBerry на счёт зачисляется больше средств, чем было отправлено.</p>
+
+                <h2>Для игроков на ПК</h2>
+
+                <p>Так наш редактор в качестве теста перевёл на свой аккаунт 258 рублей, а получил $2,15 или 327 рублей. Неожиданную «выгоду» при переводе подтвердил и другой сотрудник редакции: один из наших новостных авторов заплатил 1000 рублей, а
+                    получил на кошелёк 1300.</p>
+
+                <ul>
+                    <li>Скачайте из библиотеки одиночные игры, не требующие постоянного подключения к сети.</li>
+                    <li><b>Проверьте, установлены ли все обновления — без них не получится запускать игры в офлайн-режиме. Можно переносить файлы игры из внешнего носителя на компьютер, но тогда они просто не запустятся: всё равно понадобится
+                            проверка лицензии со стороны самого Steam.</b>
+                        <ul>
+                            <li>Зайдите в настройки Steam в разделе «Аккаунт» и уберите галочку из поля «Не сохранять данные аккаунта на этом компьютере». Если её там и не стояло — хорошо.</li>
+                            <li>Нажмите на вкладку Steam в верхнем левом углу и перейдите в автономный режим.</li>
+                        </ul>
+                    </li>
+                    <li>Проверьте, запускаются ли все установленные игры в автономном режиме. Если да — вы полностью готовы к отключению интернета.</li>
+                </ul>
+
+                <img src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
+
+                <blockquote>
+                    <p>В «Тинькофф» уточнили, что клиентам банка предоставляется кэшбек в размере 7% на каждую покупку. Партнёром банка по продаже ключей стал магазин GamersBase.</p>
+                </blockquote>
+
+                <h2>Steam ограничил способы оплаты для пользователей из России</h2>
+
+                <ol>
+                    <li>Скачайте из библиотеки одиночные игры, не требующие постоянного подключения к сети.</li>
+                    <li><b>Проверьте, установлены ли все обновления — без них не получится запускать игры в офлайн-режиме. Можно переносить файлы игры из внешнего носителя на компьютер, но тогда они просто не запустятся: всё равно понадобится
+                            проверка лицензии со стороны самого Steam.</b>
+                        <ol type="a">
+                            <li>Зайдите в настройки Steam в разделе «Аккаунт» и уберите галочку из поля «Не сохранять данные аккаунта на этом компьютере». Если её там и не стояло — хорошо.</li>
+                            <li>Нажмите на вкладку Steam в верхнем левом углу и перейдите в автономный режим.</li>
+                        </ol>
+                    </li>
+                    <li>Проверьте, запускаются ли все установленные игры в автономном режиме. Если да — вы полностью готовы к отключению интернета.</li>
+                </ol>
+
+                <h3>Заголовок третьего уровня</h3>
+
+                <p>Ограничения, судя по всему, ввели вечером 2 марта. Ранее у пользователей проходили не все платежи, а чаще всего при попытке оплатить покупку банковской картой сервис выдавал ошибку с объяснением, что компания-эмитент «отклонила
+                    запрос».</p>
+
+                <ul>
+                    <li>Скачайте из библиотеки одиночные игры, не требующие постоянного подключения к сети.</li>
+                    <li><b>Проверьте, установлены ли все обновления — без них не получится запускать игры в офлайн-режиме. Можно переносить файлы игры из внешнего носителя на компьютер, но тогда они просто не запустятся: всё равно понадобится
+                            проверка лицензии со стороны самого Steam.</b>
+                        <ul>
+                            <li>Зайдите в настройки Steam в разделе «Аккаунт» и уберите галочку из поля «Не сохранять данные аккаунта на этом компьютере». Если её там и не стояло — хорошо.</li>
+                            <li>Нажмите на вкладку Steam в верхнем левом углу и перейдите в автономный режим.</li>
+                        </ul>
+                    </li>
+                    <li>Проверьте, запускаются ли все установленные игры в автономном режиме. Если да — вы полностью готовы к отключению интернета.</li>
+                </ul>
+
+                <p>Ограничения, судя по всему, ввели вечером 2 марта. Ранее у пользователей проходили не все платежи, а чаще всего при попытке оплатить покупку банковской картой сервис выдавал ошибку с объяснением, что компания-эмитент «отклонила
+                    запрос».</p>
+
+                <div class="responsive-table">
+                    <table class="table">
+                        <tr>
+                            <th>Заголовок колонки</th>
+                            <th>Заголовок колонки</th>
+                            <th>Заголовок колонки</th>
+                            <th>Заголовок колонки</th>
+                        </tr>
+
+                        <tr>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                        </tr>
+
+                        <tr>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                        </tr>
+
+                        <tr>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                            <td>Текст ячейки</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p>Ограничения, судя по всему, ввели вечером 2 марта. Ранее у пользователей проходили не все платежи, а чаще всего при попытке оплатить покупку банковской картой сервис выдавал ошибку с объяснением, что компания-эмитент «отклонила
+                    запрос».</p>
+
+                <div class="responsive-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I3cG1dPWBdM?si=DAxdzfQXmRgo9_vi" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="article__bottom">
+                    <p class="article__author">
+                        <small>Автор статьи:</small> Александр Анисин
+                    </p>
+
+                    <div class="article__share">
+                        <small>Поделиться:</small>
+
+                        <ul class="article__share-list">
+                            <li>
+                                <a class="article__share-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#vk_share_icon" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="article__share-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#ya_share_icon" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="article__share-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#google_share_icon" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__column">
+                <div class="footer__logo"><img src="images/logo.svg" alt="INDIE"></div>
+    
+                <p class="footer__copyrights">©&nbsp;2024<br> ООО ИНДИГЭЙМС, Россия, г. Москва</p>
+            </div>
+    
+            <div class="footer__column">
+                <div class="footer-socials">
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Премиум аккаунт</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Размещения рекламы</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Техническая поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

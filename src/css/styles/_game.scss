@@ -1,0 +1,47 @@
+.game {
+    &__banner-block {
+        height: 500px;
+        position: relative;
+        padding-top: 50px;
+        z-index: 0;
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        @media(min-width: 1190px) {
+            margin-left: calc(-50vw + var(--container_max_width) / 2 - var(--container_padding));
+            margin-right: calc(-50vw + var(--container_max_width) / 2 - var(--container_padding));
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__banner-content {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        &--uploaded {
+            &::after {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+                content: '';
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+            }
+        }
+
+        img {
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+}

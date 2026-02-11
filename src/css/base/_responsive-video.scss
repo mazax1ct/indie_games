@@ -1,0 +1,25 @@
+.responsive-video {
+    height: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    iframe,
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

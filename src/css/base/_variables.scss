@@ -1,0 +1,21 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1200px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --page_bg: #F0F0F0;
+    --accent: #FD7717;
+    --accent_2: #FFC931;
+    --button_hover: #CC441A;
+    --grey: #D0D0D0;
+    --warning: #BF0505;
+    --container_padding: 15px;
+    --container_max_width: 1190px;
+    --header_min_height: 70px;
+    --primary_font: 'Roboto', Arial, sans-serif;
+}

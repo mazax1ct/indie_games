@@ -262,6 +262,10 @@
     z-index: 0;
     @include hover {
         color: var(--white);
+
+        svg {
+            fill: var(--accent);
+        }
     }
 
     svg {

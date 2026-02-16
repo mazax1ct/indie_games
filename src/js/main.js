@@ -21,3 +21,15 @@ $(document).on('click', '.js-popup-closer', function () {
   $('.popup').hide();
   return false;
 });
+
+$(document).on('click', '.js-tab-button', function() {
+  var parent = $(this).closest('.tabs');
+
+  parent.find('.js-tab-button').removeClass('is-active');
+  parent.find('.tab').removeClass('is-active');
+
+  $(this).addClass('is-active');
+  parent.find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
+
+  return false;
+});

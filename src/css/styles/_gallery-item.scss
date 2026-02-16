@@ -1,0 +1,47 @@
+.gallery-item {
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    svg {
+        fill: var(--white);
+        height: 24px;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s;
+        width: 24px;
+        z-index: 1;
+    }
+
+    &::before {
+        background-color: rgba(#000, 0.4);
+        bottom: 0;
+        content: '';
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.3s;
+        z-index: 1;
+    }
+    @include hover {
+        &::before {
+            opacity: 1;
+        }
+
+        svg {
+            opacity: 1;
+        }
+    }
+}

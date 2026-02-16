@@ -23,12 +23,13 @@
     <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body class="page page--banner">
-    <header class="header">
+    <header class="header compensate-for-scrollbar">
         <div class="header__inner container">
             <div class="header__logo">
                 <img src="images/logo.svg" alt="INDIE">
@@ -127,12 +128,148 @@
 
                 <div class="game__content-block">
                     <div class="game__sidebar">
-                        <div class="game__preview">
+                        <div class="game__sidebar-top">
+                            <div class="game__preview-image">
+                                <img src="images/content/game/preview.jpg" srcset="images/content/game/preview@2x.jpg 2x" alt="Planet of Lana">
 
+                                <div class="game__age">16+</div>
+                            </div>
+
+                            <div class="game__sidebar-buttons">
+                                <a class="button button--primary" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#steam_icon" />
+                                    </svg>
+                                    Steam
+                                </a>
+
+                                <a class="button button--primary" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#my_icon" />
+                                    </svg>
+                                    MyGames
+                                </a>
+
+                                <hr>
+
+                                <button class="button button--secondary" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    Отслеживать
+                                </button>
+
+                                <button class="button button--secondary" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#donate_icon" />
+                                    </svg>
+                                    Пожертвовать проекту
+                                </button>
+                            </div>
                         </div>
 
                         <div class="game__details">
-                            <p>Детали игры</p>
+                            <p class="game__details-title">Детали игры</p>
+
+                            <p class="game__details-subtitle">Жанр:</p>
+
+                            <ul class="game__details-list game__details-list--separator">
+                                <li><a href="#">Приключение</a></li>
+                                <li><a href="#">Головоломка</a></li>
+                                <li><a href="#">Платформер</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Тэги</p>
+
+                            <ul class="game__details-list">
+                                <li><a class="game__tag" href="#">2D</a></li>
+                                <li><a class="game__tag" href="#">Насыщенный сюжет</a></li>
+                                <li><a class="game__tag" href="#">Приключение</a></li>
+                                <li><a class="game__tag" href="#">Головоломка</a></li>
+                                <li><a class="game__tag" href="#">Платформер</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Дата выхода</p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#android_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ios_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#macos_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__details-subtitle">Языки</p>
+
+                            <ul class="game__details-list game__details-list--separator">
+                                <li><a href="#">Русский</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">Italiano</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Разработчик</p>
+
+                            <p><a href="#">Thunderful Studio</a></p>
+
+                            <p class="game__details-title">Связаться с нами</p>
+
+                            <div class="game__contacts">
+                                <a class="contact-link" href="tel:+79991112233">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                    </svg>
+                                    <span>+7 999 111 22 33</span>
+                                </a>
+
+                                <a class="contact-link" href="mailto:+thunderful@mail.com">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#email_icon" />
+                                    </svg>
+                                    <span>thunderful@mail.com</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#tg_2_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#wa_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#vk_2_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -165,15 +302,190 @@
                                     3
                                 </button>
                             </div>
+
+                            <span class="game__short-info-delimeter"></span>
+
+                            <div class="game__platform">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#android_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ios_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#macos_icon" />
+                                </svg>
+                            </div>
+
+                            <span class="game__short-info-delimeter"></span>
+
+                            <p class="game__language">Русский, English</p>
                         </div>
 
                         <div class="game__preview-text">
                             <p>Отправляйтесь на спасательную миссию вместе с главной героиней и ее верным другом в красочном мире, полном бездушных машин и неизведанных существ. Planet of Lana – это грандиозный квест-головоломка,</p>
                         </div>
 
-                        <div class="game__slider"></div>
+                        <div class="game__slider">
+                            <div class="js-gallery swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="game__tabs"></div>
+                            <button class="swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </button>
+
+                            <button class="swiper-button-next" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="game__tabs">
+                            <div class="tabs">
+                                <div class="tabs-nav">
+                                    <button class="js-tab-button tabs-nav__button is-active" type="button" data-tab="1">Об игре</button>
+                                    <button class="js-tab-button tabs-nav__button" type="button" data-tab="2">Системные требования</button>
+                                    <button class="js-tab-button tabs-nav__button" type="button" data-tab="3">Обновления</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <h2>Геймплей</h2>
+
+                                    <p>Игровой процесс состоит из платформенных действий и решения головоломок. Малозаметный, но приятный элемент — разработчики дают свободно пробежаться и насладиться красотой игры, а не просто толкают к очередным
+                                        испытаниям.</p>
+
+                                    <h2>Ключевые способности</h2>
+
+                                    <ul>
+                                        <li>Уникальный игровой процесс, основанный на взаимодействиях со спутником.</li>
+                                        <li>Решайте головоломки и проходите разные испытания со множеством неожиданных поворотов.</li>
+                                        <li>Осторожно избегайте опасностей с помощью скрытности и смекалки.</li>
+                                        <li>Положитесь на скорость реакции, чтобы уцелеть в особенно трудные мгновения.</li>
+                                        <li>Насладитесь повествованием, размах которого охватывает галактики и столетия.</li>
+                                    </ul>
+
+                                    <h2>Особенности игры</h2>
+
+                                    <ul>
+                                        <li>Облачные сохранения</li>
+                                        <li>Поддержка контролера</li>
+                                        <li>Оверлей</li>
+                                        <li>Одиночная игра</li>
+                                    </ul>
+                                </div>
+                                <div class="tab" data-tab="2">
+                                    <div class="system-require">
+                                        <h3>Windows</h3>
+
+                                        <h4>Минимальные системные требования</h4>
+
+                                        <div class="sys_req_container">
+                                            <div class="sys_req_item">
+                                                <p><strong>ОС</strong></p>
+                                                <p>Windows 7</p>
+                                            </div>
+                                            <div class="sys_req_item">
+                                                <p><strong>Процессор</strong></p>
+                                                <p>1.2 GHZ</p>
+                                            </div>
+                                            <div class="sys_req_item">
+                                                <p><strong>Оперативная память</strong></p>
+                                                <p>2 GB ОЗУ</p>
+                                            </div>
+                                            <div class="sys_req_item">
+                                                <p><strong>Место на диске</strong></p>
+                                                <p>320 MB</p>
+                                            </div>
+                                        </div>
+
+                                        <h3>MacOS</h3>
+
+                                        <h4>Минимальные системные требования</h4>
+
+                                        <div class="sys_req_container">
+                                            <div class="sys_req_item">
+                                                <p><strong>ОС</strong></p>
+                                                <p>Mac OS</p>
+                                            </div>
+                                            <div class="sys_req_item">
+                                                <p><strong>Процессор</strong></p>
+                                                <p>1.2 GHZ</p>
+                                            </div>
+                                            <div class="sys_req_item">
+                                                <p><strong>Оперативная память</strong></p>
+                                                <p>2 MB ОЗУ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab" data-tab="3"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,7 +548,12 @@
     <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/inputmask-init.js"></script>
     
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
     <script src="js/main.js"></script>
+
+    <script src="js/game.js"></script>
 </body>
 
 </html>

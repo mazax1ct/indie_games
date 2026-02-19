@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <h2>Кнопки</h2>
+
+            <button class="button button--primary" type="button">Кнопка</button>
+
+            <a class="button button--primary" href="#">Ссылка</a>
+
+            <button class="button button--primary" type="button" disabled>Кнопка</button>
+
+            <br><br>
+
+            <button class="button button--secondary" type="button">Кнопка</button>
+
+            <a class="button button--secondary" href="#">Ссылка</a>
+
+            <button class="button button--secondary" type="button" disabled>Кнопка</button>
+
+            <br><br>
+
+            <h2>Поля ввода</h2>
+
+            <label class="input-label">
+                <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+                <input class="input" type="text" name="EMAIL" placeholder="name@gmail.com" required>
+            </label>
+
+            <label class="input-label">
+                <span class="input-label__text">E-mail</span>
+
+                <input class="input" type="text" name="EMAIL" placeholder="name@gmail.com" disabled>
+            </label>
+
+            <label class="input-label">
+                <span class="input-label__text">E-mail</span>
+
+                <input class="input error" type="text" name="EMAIL" placeholder="name@gmail.com">
+
+                <span class="error-text">Ошибка!</span>
+            </label>
+
+            <label class="input-label">
+                <span class="input-label__text">Ваше сообщение</span>
+
+                <textarea class="textarea" placeholder="Ваше сообщение"></textarea>
+            </label>
+
+            <br><br>
+
+            <h2>Радио</h2>
+
+            <label class="radio">
+                <input type="radio" name="spec" value="Режиссёр">
+                <span class="radio__icon"></span>
+                <span class="radio__text">Режиссёр</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="spec" value="Экшн" disabled>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Экшн</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="spec" value="Другой">
+                <span class="radio__icon"></span>
+                <span class="radio__text">Другой</span>
+            </label>
+
+            <br><br>
+
+            <h2>Чекбоксы</h2>
+
+            <label class="checkbox">
+                <input type="checkbox" name="salary" value="По договоренности">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">По договоренности</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="salary" value="0 ₽ - 1 000 ₽" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">0 ₽ - 1 000 ₽</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="salary" value="1 000 ₽ - 5 000 ₽">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">1 000 ₽ - 5 000 ₽</span>
+            </label>
+
+            <br><br>
+
+            <h2>Попапы</h2>
+
+            <button class="button button--primary" type="button" data-fancybox="register" data-src="#register">Регистрация</button>
+
+            <br><br>
+
+            <button class="button button--primary" type="button" data-fancybox="auth" data-src="#auth">Вход</button>
+
+            <br><br>
+
+            <button class="button button--primary" type="button" data-fancybox="pass_recovery" data-src="#pass_recovery">Восстановление пароля</button>
+
+            <br><br>
+
+            <button class="button button--primary" type="button" data-fancybox="confirm" data-src="#confirm">Подтверждение действия</button>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

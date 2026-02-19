@@ -77,3 +77,9 @@ button.rating {
     position: relative;
     z-index: 0;
 }
+
+button.rating--button {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 4px 10px;
+}

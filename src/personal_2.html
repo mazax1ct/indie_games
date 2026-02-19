@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--personal">
+    //= template/common/header--auth.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="personal">
+                <div class="personal__menu">
+                    <button class="js-left-menu-toggler left-menu-toggler button button--secondary" type="button">
+                        Меню личного кабинета
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_down" />
+                        </svg>
+                    </button>
+
+                    <div class="left-menu hidden">
+                        <ul class="left-menu__list">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">
+                                    Личный счет
+                                    <span class="badge badge--accent">1 530₽</span>
+                                </a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">История операций</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои игры</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои статьи</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Отслеживаю</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Настройки аккаунта</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Премиум</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Рекламный кабинет</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Уведомления</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal__content">
+                    <div class="transactions">
+                        <h1 class="h2">История операций</h1>
+
+                        <table class="transactions__table">
+                            <tr>
+                                <th>Операция</th>
+                                <th>Дата</th>
+                            </tr>
+
+                            <tr>
+                                <td>Пополнение личного счета с карты <b class="accent-color">1 000₽</b></td>
+                                <td>25.04.2024</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вывод средств с личного счета на карту <b class="accent-color">549₽</b></td>
+                                <td>23.04.2024</td>
+                            </tr>
+
+                            <tr>
+                                <td>Отправлен запрос на вывод средств с личного счета <b class="accent-color">490₽</b></td>
+                                <td>23.04.2024</td>
+                            </tr>
+
+                            <tr>
+                                <td>Возврат средств на личный счет за покупку рекламы <b class="accent-color">490₽</b></td>
+                                <td>20.04.2024</td>
+                            </tr>
+
+                            <tr>
+                                <td>Оплата с личного счета рекламы на <b class="accent-color">490₽</b></td>
+                                <td>18.04.2024</td>
+                            </tr>
+
+                            <tr>
+                                <td>Оплата с личного счета за премиум аккаунта на 6 месяцев <b class="accent-color">1000₽</b><br> <i>Действует с 18.09.2023 до 18.03.2024</i></td>
+                                <td>18.09.2023</td>
+                            </tr>
+
+                            <tr>
+                                <td>Оплата с банковской карты премиум аккаунта на 3 месяца <b class="accent-color">750₽</b><br> <i>Действует с 16.06.2023 до 16.09.2023</i></td>
+                                <td>16.06.2023</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

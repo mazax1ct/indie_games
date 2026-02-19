@@ -41,6 +41,7 @@
         &[data-disabled] {
             background-color: var(--grey);
             border-color: var(--grey);
+            color: #737373;
         }
     }
 
@@ -60,9 +61,9 @@
         &.disabled,
         &:disabled,
         &[data-disabled] {
-            background-color: #fff;
-            border-color: var(--secondary_2);
-            color: var(--secondary_2);
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
         }
     }
 
@@ -71,5 +72,11 @@
         height: 20px;
         min-width: 20px;
         width: 20px;
+
+        &.small {
+            height: 15px;
+            min-width: 15px;
+            width: 15px;
+        }
     }
 }

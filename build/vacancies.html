@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="INDIE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="INDIE">
+            </div>
+    
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Категории</a>
+    
+                        <div class="sub-menu">
+                            <div class="sub-menu__inner container">
+                                <p class="sub-menu__title">Жанр</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/rpg.svg" alt="">Ролевые игры</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/strategy.svg" alt="">Стратегии</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/adventure.svg" alt="">Приключение</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/racing.svg" alt="">Гонки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/sport.svg" alt="">Спорт</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/action.svg" alt="">Экшн</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/arcade.svg" alt="">Аркада</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/puzzle.svg" alt="">Головоломки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/kids.svg" alt="">Детские</a></li>
+                                </ul>
+    
+                                <p class="sub-menu__title">Платформа</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/win.svg" alt="">Windows</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/macos.svg" alt="">MacOS</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/android.svg" alt="">Android</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/ios.svg" alt="">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Статьи</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Премиум аккаунт</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="header__search-opener" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="notifications" type="button" title="Уведомления">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#bell_icon" />
+                    </svg>
+    
+                    <span class="notifications__counter">10</span>
+                </button>
+    
+                <div class="header__balance badge badge--accent">1 530₽</div>
+    
+                <a class="user-link" href="#">
+                    <span class="user-link__avatar">
+                        <img src="images/content/user_avatar.jpg" srcset="images/content/user_avatar@2x.jpg 2x" alt="">
+                    </span>
+    
+                    <span class="user-link__text">Александр А.</span>
+    
+                    <span class="user-link__badge badge badge--small badge--accent_2">PRO</span>
+                </a>
+    
+                <button class="js-mobile-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs breadcrumbs--default">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                <li class="breadcrumbs__item">Вакансии</li>
+            </ul>
+
+            <div class="vacancies">
+                <div class="vacancies__sidebar">
+                    <button class="js-filter-toggler filter-toggler button button--secondary" type="button">Фильтры</button>
+
+                    <form class="filter hidden">
+                        <div class="filter__title-block">
+                            <p class="filter__title">Фильтры</p>
+
+                            <button class="filter__reset" type="reset">Сбросить все</button>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__list">
+                                <label class="radio radio--text">
+                                    <input type="radio" name="type" value="Все" checked>
+                                    <span class="radio__text">Все</span>
+                                </label>
+                                <label class="radio radio--text">
+                                    <input type="radio" name="type" value="Подработка">
+                                    <span class="radio__text">Подработка</span>
+                                </label>
+                                <label class="radio radio--text">
+                                    <input type="radio" name="type" value="Постоянная работа">
+                                    <span class="radio__text">Постоянная работа</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <p class="filter__section-title">Поиск по словам</p>
+
+                            <label class="filter__search input-label">
+                                <input class="filter__search-input input" type="text" name="query" placeholder="Ключевые слова">
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__section-title-block">
+                                <p class="filter__section-title">Специализация</p>
+
+                                <button class="js-filter-section-toggler filter__section-toggler is-active" type="button" title="Показать">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_down" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="filter__section-dropdown">
+                                <div class="filter__list">
+                                    <label class="radio">
+                                        <input type="radio" name="spec" value="Дизайн">
+                                        <span class="radio__icon"></span>
+                                        <span class="radio__text">Дизайн</span>
+                                    </label>
+
+                                    <label class="radio">
+                                        <input type="radio" name="spec" value="Разработчик">
+                                        <span class="radio__icon"></span>
+                                        <span class="radio__text">Разработчик</span>
+                                    </label>
+
+                                    <label class="radio">
+                                        <input type="radio" name="spec" value="Тестировщик">
+                                        <span class="radio__icon"></span>
+                                        <span class="radio__text">Тестировщик</span>
+                                    </label>
+
+                                    <label class="radio">
+                                        <input type="radio" name="spec" value="Гейм-дизайнер">
+                                        <span class="radio__icon"></span>
+                                        <span class="radio__text">Гейм-дизайнер</span>
+                                    </label>
+
+                                    <label class="radio">
+                                        <input type="radio" name="spec" value="Художник">
+                                        <span class="radio__icon"></span>
+                                        <span class="radio__text">Художник</span>
+                                    </label>
+
+                                    <div class="filter__list-cut">
+                                        <label class="radio">
+                                            <input type="radio" name="spec" value="Режиссёр">
+                                            <span class="radio__icon"></span>
+                                            <span class="radio__text">Режиссёр</span>
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" name="spec" value="Экшн">
+                                            <span class="radio__icon"></span>
+                                            <span class="radio__text">Экшн</span>
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" name="spec" value="Другой">
+                                            <span class="radio__icon"></span>
+                                            <span class="radio__text">Другой</span>
+                                        </label>
+                                    </div>
+
+                                    <button class="js-filter-cut-toggler filter__list-cut-toggler" type="button" data-text="Скрыть">Показать еще</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__section-title-block">
+                                <p class="filter__section-title">Вознаграждение</p>
+
+                                <button class="js-filter-section-toggler filter__section-toggler is-active" type="button" title="Показать">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_down" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="filter__section-dropdown">
+                                <div class="filter__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="По договоренности">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">По договоренности</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="0 ₽ - 1 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">0 ₽ - 1 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="1 000 ₽ - 5 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">1 000 ₽ - 5 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="5 000 ₽ - 10 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">5 000 ₽ - 10 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="10 000 ₽ - 20 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">10 000 ₽ - 20 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="10 000 ₽ - 20 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Больше 20 000 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="filter__submit button button--primary" type="submit">Фильтровать</button>
+                    </form>
+                </div>
+
+                <div class="vacancies__content">
+                    <div class="vacancies__title-block">
+                        <h1 class="vacancies__title">Вакансии</h1>
+
+                        <a class="button button--primary" href="#">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#circle_plus_icon" />
+                            </svg>
+                            Создать вакансию
+                        </a>
+                    </div>
+
+                    <div class="vacancies__grid">
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-banner">
+                            <div class="vacancy-banner__image">
+                                <img src="images/content/vacancies/banner.jpg" srcset="images/content/vacancies/banner@2x.jpg 2x" alt="">
+                                <p class="vacancy-banner__erid">Реклама: ООО «ИНДИ-Гэймс» ИНН 5649846519841</p>
+                            </div>
+
+                            <div class="vacancy-banner__text-block">
+                                <p class="vacancy-banner__title">Требуется разработчик</p>
+
+                                <p class="vacancy-banner__text">В&nbsp;компанию «INGAMEWETRUST» требуется<br> разработчик с&nbsp;опытом от&nbsp;5&nbsp;лет.<br> Опыт не обязателен.</p>
+
+                                <a class="button button--primary" href="#">Перейти к вакансии</a>
+                            </div>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Постоянная работа</div>
+                            </div>
+
+                            <p class="vacancy-card__salary">от 500 до 1000 €</p>
+
+                            <p class="vacancy-card__title">Геймдизайнер мобильных игр</p>
+
+                            <p class="vacancy-card__preview-text">Требуемый опыт работы: не требуется<br> Полная занятость, удаленная работа</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО ДЕВГЕЙМ
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="vacancy-card">
+                            <div class="vacancy-card__top">
+                                <time class="vacancy-card__date" datetime="2024-03-05 16:34">05.03.2024, 16:34</time>
+
+                                <div class="vacancy-card__type badge badge--small-xl badge--warning">Подработка</div>
+                            </div>
+
+                            <p class="vacancy-card__salary vacancy-card__salary--no_salary">Бюджет не указан</p>
+
+                            <p class="vacancy-card__title">3D Generalist/3D Artist</p>
+
+                            <p class="vacancy-card__preview-text">Подработка: сменами по 4-6 часов или по вечерам</p>
+
+                            <p class="vacancy-card__employer">
+                                <img src="images/content/vacancies/logo.jpg" srcset="images/content/vacancies/logo@2x.jpg 2x" alt="">
+                                ООО Манка Студио
+                            </p>
+
+                            <a class="button button--primary" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <ul class="pager">
+                        <li>
+                            <span class="pager__link">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="pager__link is-active" href="#">1</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">2</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">3</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">4</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">5</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__column">
+                <div class="footer__logo"><img src="images/logo.svg" alt="INDIE"></div>
+    
+                <p class="footer__copyrights">©&nbsp;2024<br> ООО ИНДИГЭЙМС, Россия, г. Москва</p>
+            </div>
+    
+            <div class="footer__column">
+                <div class="footer-socials">
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Премиум аккаунт</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Размещения рекламы</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Техническая поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+
+</html>

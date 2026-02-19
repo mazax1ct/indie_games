@@ -1,0 +1,27 @@
+.social-register {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        align-items: center;
+        background-color: var(--accent_2);
+        color: var(--white);
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        text-decoration: none;
+        width: 50px;
+
+        svg {
+            fill: currentColor;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

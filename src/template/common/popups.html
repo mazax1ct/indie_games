@@ -1,28 +1,135 @@
-<div class="popup">
-    <div class="popup__shade"></div>
+<div id="register" class="popup">
+    <p class="popup__title h2">Регистрация</p>
 
-    <div class="popup__inner">
-        <div class="popup__form">
-            <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M22,22.8c-0.2,0-0.4-0.1-0.5-0.2L12,13.1l-9.5,9.5c-0.3,0.3-0.8,0.3-1.1,0s-0.3-0.8,0-1.1l9.5-9.5L1.5,2.5c-0.3-0.3-0.3-0.8,0-1.1s0.8-0.3,1.1,0l9.5,9.5l9.5-9.5c0.3-0.3,0.8-0.3,1.1,0s0.3,0.8,0,1.1L13.1,12l9.5,9.5c0.3,0.3,0.3,0.8,0,1.1C22.4,22.7,22.2,22.8,22,22.8z" />
-                </svg>
-            </button>
+    <p class="text-center">Через соцсети</p>
 
-            <form action="">
-                <p class="h3">Связаться<br> с нами</p>
+    <div class="social-register">
+        <a class="social-register__link" href="#" title="Вконтакте">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_vk_icon" />
+            </svg>
+        </a>
 
-                <label class="input-label">
-                    <input class="input error" type="text" name="name" value="" placeholder="Имя">
-                </label>
+        <a class="social-register__link" href="#" title="Яндекс">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_ya_icon" />
+            </svg>
+        </a>
 
-                <label class="input-label">
-                    <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="Телефон">
-                </label>
-
-                <button class="button button--primary" type="submit">Заказать звонок</button>
-            </form>
-        </div>
+        <a class="social-register__link" href="#" title="Google">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_google_icon" />
+            </svg>
+        </a>
     </div>
+
+    <p class="text-center">или</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="PASS" placeholder="Введите ваш пароль" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Повторите пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="REPASS" placeholder="Введите пароль повторно" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Регистрация</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p>Нажимая кнопку «Зарегистрироваться»<br> вы принимаете условия <a class="black-link" href="#" target="_blank">Пользовательского соглашения</a></p>
+
+        <p>Уже зарегистрированы? <a href="#">Вход</a></p>
+    </div>
+</div>
+
+<div id="auth" class="popup">
+    <p class="popup__title h2">Вход</p>
+
+    <p class="text-center">Через соцсети</p>
+
+    <div class="social-register">
+        <a class="social-register__link" href="#" title="Вконтакте">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_vk_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Яндекс">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_ya_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Google">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_google_icon" />
+            </svg>
+        </a>
+    </div>
+
+    <p class="text-center">или</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="PASS" placeholder="Введите ваш пароль" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Войти</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p><a class="black-link" href="#" target="_blank">Восстановить пароль</a></p>
+
+        <p>Еще не зарегистрированы? <a href="#">Регистрация</a></p>
+    </div>
+</div>
+
+<div id="pass_recovery" class="popup">
+    <p class="popup__title h2">Восстановление пароля</p>
+
+    <p class="text-center">Введите ваш e-mail</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Восстановить</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p>На указанный вами адрес электронной почты будет отправлена инструкция по восстановления пароля</p>
+
+        <p><a href="#">Назад</a></p>
+    </div>
+</div>
+
+<div id="confirm" class="popup">
+    <p class="popup__title h2">Инструкция отправлена</p>
+
+    <p class="text-center"> Зайдите в почту с указанным адресом и перейдите по ссылке «Восстановить пароль»</p>
+
+    <a class="popup__button button button--primary" href="#">На главную</a>
 </div>

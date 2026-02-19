@@ -14,15 +14,8 @@
     padding: 0;
 }
 @mixin hover {
-    @media (any-hover: hover) {
+    @media (any-hover: hover) and (pointer: fine) {
         &:hover {
-            @content;
-        }
-    }
-}
-@mixin active {
-    @media (any-hover: hover) {
-        &:active {
             @content;
         }
     }

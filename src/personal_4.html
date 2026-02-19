@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--personal">
+    //= template/common/header--auth.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="personal">
+                <div class="personal__menu">
+                    <button class="js-left-menu-toggler left-menu-toggler button button--secondary" type="button">
+                        Меню личного кабинета
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_down" />
+                        </svg>
+                    </button>
+
+                    <div class="left-menu hidden">
+                        <ul class="left-menu__list">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">
+                                    Личный счет
+                                    <span class="badge badge--accent">1 530₽</span>
+                                </a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">История операций</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои игры</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои статьи</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Отслеживаю</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Настройки аккаунта</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">Премиум</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Рекламный кабинет</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Уведомления</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal__content">
+                    <div class="premium">
+                        <h1 class="h2">Премиум</h1>
+
+                        <p class="premium__text">Больше возможностей с <b class="accent_2-color">«Премиум»</b> аккаунтом.</p>
+
+                        <div class="plans">
+                            <div class="plan plan--default">
+                                <p class="plan__title">Базовый</p>
+
+                                <ul class="plan__features">
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Комментирование
+                                    </li>
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Отслеживание игр
+                                    </li>
+                                    <li class="plan__features-item">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Загрузка своих игр
+                                    </li>
+                                    <li class="plan__features-item">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Публикация статей в блоге
+                                    </li>
+                                    <li class="plan__features-item">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Создание вакансий
+                                    </li>
+                                </ul>
+
+                                <div class="plan__current">
+                                    <p class="plan__current-info">Бесплатно</p>
+
+                                    <div class="plan__current-title">Ваш текущий тариф </div>
+                                </div>
+                            </div>
+
+                            <div class="plan plan--premium">
+                                <p class="plan__title">Премиум <span class="badge badge--accent_2">pro</span></p>
+
+                                <ul class="plan__features">
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Комментирование
+                                    </li>
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Отслеживание игр
+                                    </li>
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Загрузка своих игр
+                                    </li>
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Публикация статей в блоге
+                                    </li>
+                                    <li class="plan__features-item is-active">
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                        Создание вакансий
+                                    </li>
+                                </ul>
+
+                                <form class="plan__form">
+                                    <div class="plan__options">
+                                        <label class="plan__option">
+                                            <input type="radio" name="PRICE" value="300" checked>
+                                            <span class="plan__option-icon"></span>
+                                            1 месяц
+
+                                            <span class="plan__option-price">300 ₽</span>
+                                        </label>
+
+                                        <label class="plan__option">
+                                            <input type="radio" name="PRICE" value="750">
+                                            <span class="plan__option-icon"></span>
+                                            3 месяца
+                                            <span class="plan__option-discount">-20%</span>
+
+                                            <span class="plan__option-price">750 ₽</span>
+                                            <span class="plan__option-old-price">1000 ₽</span>
+                                        </label>
+
+                                        <label class="plan__option">
+                                            <input type="radio" name="PRICE" value="1000">
+                                            <span class="plan__option-icon"></span>
+                                            6 месяцев
+                                            <span class="plan__option-discount">-40%</span>
+
+                                            <span class="plan__option-price">1000 ₽</span>
+                                            <span class="plan__option-old-price">1600 ₽</span>
+                                        </label>
+                                    </div>
+
+                                    <button class="button button--primary" type="submit">Оформить подписку</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

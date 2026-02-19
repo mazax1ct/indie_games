@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--personal">
+    //= template/common/header--auth.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="personal">
+                <div class="personal__menu">
+                    <button class="js-left-menu-toggler left-menu-toggler button button--secondary" type="button">
+                        Меню личного кабинета
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_down" />
+                        </svg>
+                    </button>
+
+                    <div class="left-menu hidden">
+                        <ul class="left-menu__list">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">
+                                    Личный счет
+                                    <span class="badge badge--accent">1 530₽</span>
+                                </a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">История операций</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои игры</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои статьи</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Отслеживаю</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Настройки аккаунта</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Премиум</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Рекламный кабинет</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Уведомления</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal__content">
+                    <div class="personal-account">
+                        <h1 class="h2">Личный счет</h1>
+
+                        <p class="personal-account__balance">
+                            <span class="badge badge--big badge--accent">1 530₽</span>
+                        </p>
+
+                        <div class="tabs">
+                            <div class="tabs-nav">
+                                <button class="js-tab-button tabs-nav__button is-active" type="button" data-tab="1">Пополнить счет</button>
+                                <button class="js-tab-button tabs-nav__button" type="button" data-tab="2">Вывести со счета</button>
+                            </div>
+
+                            <div class="tab is-active" data-tab="1">
+                                <p class="personal-account__note">Пополнение осуществляется с банковской карты.<br> Пополняйте с запасом, чтобы всегда заказывать в один клик</p>
+
+                                <form class="personal-account__form" action="">
+                                    <label class="input-label">
+                                        <span class="input-label__text">Сумма, ₽ <span class="required">*</span></span>
+
+                                        <input class="input" type="text" name="SUM" placeholder="Введите сумму" required>
+                                    </label>
+                                    <button class="button button--primary" type="submit">Пополнить</button>
+                                </form>
+                            </div>
+
+                            <div class="tab" data-tab="2">
+                                <p class="personal-account__note">Текст о выводе средств</p>
+
+                                <form class="personal-account__form" action="">
+                                    <label class="input-label">
+                                        <span class="input-label__text">Сумма, ₽ <span class="required">*</span></span>
+
+                                        <input class="input" type="text" name="SUM" placeholder="Введите сумму" required>
+                                    </label>
+                                    <button class="button button--primary" type="submit">Вывести</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

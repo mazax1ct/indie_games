@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--personal">
+    //= template/common/header--auth.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="personal">
+                <div class="personal__menu">
+                    <button class="js-left-menu-toggler left-menu-toggler button button--secondary" type="button">
+                        Меню личного кабинета
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_down" />
+                        </svg>
+                    </button>
+
+                    <div class="left-menu hidden">
+                        <ul class="left-menu__list">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">
+                                    Личный счет
+                                    <span class="badge badge--accent">1 530₽</span>
+                                </a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">История операций</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои игры</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои статьи</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Отслеживаю</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">Настройки аккаунта</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Премиум</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Рекламный кабинет</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Уведомления</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal__content">
+                    <div class="account-settings">
+                        <h1 class="h2">Настройки аккаунта</h1>
+
+                        <form action="">
+                            <label class="input-label">
+                                <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+                                <input class="input" type="text" name="EMAIL" placeholder="name@gmail.com" required>
+                            </label>
+
+                            <label class="input-label">
+                                <span class="input-label__text">Имя и фамилия <span class="required">*</span></span>
+
+                                <input class="input" type="text" name="EMAIL" placeholder="Введите имя и фамилию" required>
+                            </label>
+
+                            <label class="input-label">
+                                <span class="input-label__text">Дата рождения</span>
+
+                                <input class="js-date-mask input input--calendar" type="text" name="EMAIL" placeholder="00.00.0000">
+                            </label>
+
+                            <label class="input-label">
+                                <span class="input-label__text">Новый пароль <span class="required">*</span></span>
+
+                                <input class="input" type="text" name="EMAIL" placeholder="Введите новый пароль">
+                            </label>
+
+                            <label class="input-label">
+                                <span class="input-label__text">Введите новый пароль еще раз <span class="required">*</span></span>
+
+                                <input class="input" type="text" name="EMAIL" placeholder="Введите новый пароль еще раз">
+                            </label>
+
+                            <button class="button button--primary" type="submit">Сохранить</button>
+                        </form>
+
+                        <div class="linked-socials">
+                            <p class="linked-socials__title">Привязанные социальные сети</p>
+
+                            <div class="linked-socials__grid">
+                                <a class="linked-socials__item is-active" href="#">
+                                    <span class="button button--secondary">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#tg_2_icon" />
+                                        </svg>
+                                        Telegram
+                                        <svg class="small" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#checked_icon" />
+                                        </svg>
+                                    </span>
+
+                                    <span class="linked-socials__link">Отвязать</span>
+                                </a>
+
+                                <a class="linked-socials__item" href="#">
+                                    <span class="button button--secondary">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#vk_2_icon" />
+                                        </svg>
+                                        Вконтакте
+                                    </span>
+
+                                    <span class="linked-socials__link">Привязать</span>
+                                </a>
+
+                                <a class="linked-socials__item" href="#">
+                                    <span class="button button--secondary">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#wa_icon" />
+                                        </svg>
+                                        WhatsApp
+                                    </span>
+
+                                    <span class="linked-socials__link">Привязать</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

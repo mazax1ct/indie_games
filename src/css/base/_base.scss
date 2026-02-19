@@ -40,6 +40,15 @@ html {
         }
     }
 
+    &--personal {
+        .page__content {
+            padding-top: calc(50px + var(--header_min_height));
+            @media(min-width: $md) {
+                padding-top: calc(100px + var(--header_min_height));
+            }
+        }
+    }
+
     &--404 {
         .page__content {
             background-color: var(--accent_2);
@@ -121,6 +130,10 @@ a {
     transition: color 0.3s;
     @include hover {
         color: var(--button_hover);
+    }
+
+    &.black-link {
+        color: var(--black);
     }
 }
 
@@ -320,6 +333,14 @@ blockquote {
 
 .accent-color {
     color: var(--accent);
+}
+
+.accent_2-color {
+    color: var(--accent_2);
+}
+
+.grey-color {
+    color: var(--grey);
 }
 
 hr {

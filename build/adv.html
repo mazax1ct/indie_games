@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="INDIE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="INDIE">
+            </div>
+    
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Категории</a>
+    
+                        <div class="sub-menu">
+                            <div class="sub-menu__inner container">
+                                <p class="sub-menu__title">Жанр</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/rpg.svg" alt="">Ролевые игры</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/strategy.svg" alt="">Стратегии</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/adventure.svg" alt="">Приключение</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/racing.svg" alt="">Гонки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/sport.svg" alt="">Спорт</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/action.svg" alt="">Экшн</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/arcade.svg" alt="">Аркада</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/puzzle.svg" alt="">Головоломки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/kids.svg" alt="">Детские</a></li>
+                                </ul>
+    
+                                <p class="sub-menu__title">Платформа</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/win.svg" alt="">Windows</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/macos.svg" alt="">MacOS</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/android.svg" alt="">Android</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/ios.svg" alt="">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Статьи</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Премиум аккаунт</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="header__search-opener" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="notifications" type="button" title="Уведомления">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#empty_bell_icon" />
+                    </svg>
+                </button>
+    
+                <div class="header__balance badge badge--accent">1 530₽</div>
+    
+                <a class="user-link" href="#">
+                    <span class="user-link__avatar">
+                        <img src="images/content/user_avatar.jpg" srcset="images/content/user_avatar@2x.jpg 2x" alt="">
+                    </span>
+    
+                    <span class="user-link__text">Александр А.</span>
+    
+                    <span class="user-link__badge badge badge--small badge--accent_2">PRO</span>
+                </a>
+    
+                <button class="js-mobile-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="banner">
+                <div class="banner__image">
+                    <img src="images/content/adv/logo.svg" alt="">
+                </div>
+
+                <div class="banner__text-block">
+                    <h1 class="banner__title">Размещайте рекламу<br> на свой продукт</h1>
+
+                    <p class="banner__text">Откройте больше возможностей для продвижения своей игры</p>
+
+                    <a class="button button--secondary" href="#">Разместить рекламу</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Преимущества рекламы</h2>
+
+                <p class="section__text">Если вы хотите найти работу в сфере игр, публиковать статьи или продвигать свою игру, то у нас для вас есть план.</p>
+
+                <div class="three-columns">
+                    <div>
+                        <img src="images/content/adv/icon_1.svg" alt="">
+                        <p><b>Безграничный охват пользователей</b></p>
+                        <p>Портал поможет развивать свои навыки письма и нанимать сотрудников по данной специфике.</p>
+                    </div>
+
+                    <div>
+                        <img src="images/content/adv/icon_2.svg" alt="">
+                        <p><b>Круглосуточный контакт с&nbsp;потенциальными клиентами</b></p>
+                        <p>Когда вы делитесь своей работой, то можете привлечь потенциальных покупателей к ней на этапе разработки.</p>
+                    </div>
+
+                    <div>
+                        <img src="images/content/adv/icon_3.svg" alt="">
+                        <p><b>Продвигайте свои игры беспрепятственно</b></p>
+                        <p>Когда вы создаете учетную запись, вы можете легко продвигать и продавать свои игры.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_2 section_2--reverse">
+                <div class="section_2__image">
+                    <img src="images/content/premium/img_1.jpg" srcset="images/content/premium/img_1@2x.jpg 2x" alt="">
+                </div>
+
+                <div class="section_2__text-block">
+                    <h2>Работайте и зарабатывайте</h2>
+                    <p>Инди.рф поможет найти покупателя вашего таланта</p>
+                    <p>Тысячи заказчиков и покупателей посещают Инди.рф ежедневно в поисках исполнителя</p>
+                    <a class="button button--primary" href="#">Разместить рекламу</a>
+                </div>
+            </div>
+
+            <div class="section_3">
+                <div class="section_3__image">
+                    <img src="images/content/premium/img_2.jpg" srcset="images/content/premium/img_2@2x.jpg 2x" alt="">
+                </div>
+
+                <div class="section_3__text-block">
+                    <div class="section_3__text-block-inner">
+                        <h2>Найдите фрилансера</h2>
+                        <p>Наши лучшие авторы для вашего бизнеса</p>
+                        <p>Настройте свою команду на успех каждый раз с помощью талантливых фрилансеров, на которых вы можете положиться.</p>
+                        <a class="button button--primary" href="#">Оформить подписку</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center">Выберите место вашей рекламы</h2>
+            <br>
+
+            <div class="section_2">
+                <div class="section_2__image">
+                    <img src="images/content/adv/img_1.jpg" srcset="images/content/adv/img_1@2x.jpg 2x" alt="">
+                </div>
+
+                <div class="section_2__text-block">
+                    <h2>Размер 260х260 px</h2>
+                    <p>Расположен под фильтром, всегда будет на виду у пользователей.</p>
+                    <a class="button button--primary" href="#">Выбрать место</a>
+                </div>
+            </div>
+
+            <div class="section_2 section_2--reverse">
+                <div class="section_2__image">
+                    <img src="images/content/adv/img_2.jpg" srcset="images/content/adv/img_2@2x.jpg 2x" alt="">
+                </div>
+
+                <div class="section_2__text-block">
+                    <h2>Размер 860х340 px</h2>
+                    <p>Будет находиться перебивками в контенте, чаще просматриваться.</p>
+                    <a class="button button--primary" href="#">Выбрать место</a>
+                </div>
+            </div>
+
+            <div class="section_2">
+                <div class="section_2__image">
+                    <img src="images/content/adv/img_3.jpg" srcset="images/content/adv/img_3@2x.jpg 2x" alt="">
+                </div>
+
+                <div class="section_2__text-block">
+                    <h2>Размер 260х340 px</h2>
+                    <p>Размещается как часть контента, более нативная и не навязчивая реклама.</p>
+                    <a class="button button--primary" href="#">Выбрать место</a>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__column">
+                <div class="footer__logo"><img src="images/logo.svg" alt="INDIE"></div>
+    
+                <p class="footer__copyrights">©&nbsp;2024<br> ООО ИНДИГЭЙМС, Россия, г. Москва</p>
+            </div>
+    
+            <div class="footer__column">
+                <div class="footer-socials">
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Премиум аккаунт</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Размещения рекламы</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Техническая поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -5,12 +5,17 @@
     &__button {
         @include button-reset;
         border-bottom: 2px solid var(--grey);
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.2;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 8px;
         white-space: nowrap;
+        @media(min-width: $md) {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         &.is-active {
             border-bottom-color: var(--accent);

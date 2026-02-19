@@ -1,0 +1,78 @@
+.left-menu-toggler {
+    width: 100%;
+    @media(min-width: $md) {
+        display: none;
+    }
+
+    &.is-active {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    & + .left-menu {
+        margin-top: 15px;
+    }
+}
+
+.left-menu {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+
+    &.hidden {
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
+        @media(min-width: $md) {
+            display: block !important;
+            margin-top: 0;
+        }
+    }
+
+    &__list {
+        @include list-reset;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__link {
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        color: var(--grey);
+        display: flex;
+        font-weight: 500;
+        justify-content: space-between;
+        gap: 15px;
+        min-height: 46px;
+        padding: 9px 15px;
+        transition: border-color 0.3s, color 0.3s;
+        text-decoration: none;
+
+        &:not(.is-active) {
+            @include hover {
+                border-color: var(--accent_2);
+                color: var(--accent_2);
+            }
+        }
+
+        &.is-active {
+            background-color: var(--accent_2);
+            box-shadow: 2px 4px 10px rgba(255, 201, 49, 0.2);
+            color: var(--black);
+        }
+
+        &:not(.is-active):not(:hover) {
+            .badge {
+                background-color: transparent;
+                border: 1px solid var(--grey);
+                color: var(--grey);
+            }
+        }
+    }
+}

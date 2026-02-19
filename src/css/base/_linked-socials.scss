@@ -1,0 +1,53 @@
+.linked-socials {
+    &__title {
+        font-size: clamp(16px, 3vw, 20px);
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+
+    &__item {
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        @media(min-width: $sm) {
+            width: calc(100% / 3 - 40px / 3 * 2);
+        }
+        @include hover {
+            .linked-socials__link {
+                text-decoration: none;
+            }
+        }
+
+        .button {
+            margin-bottom: 5px;
+        }
+
+        &.is-active {
+            svg {
+                fill: var(--accent);
+
+                &.small {
+                    fill: var(--success);
+                }
+            }
+
+            .linked-socials__link {
+                color: var(--accent);
+            }
+        }
+    }
+
+    &__link {
+        color: var(--warning);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}

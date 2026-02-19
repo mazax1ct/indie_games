@@ -1,72 +1,44 @@
 .popup {
-    bottom: 0;
+    background-color: var(--white);
+    border-radius: 15px;
+    border: 1px solid var(--accent_2);
+    box-shadow: 2px 4px 70px rgba(255, 201, 49, 0.2);
     display: none;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 100;
+    max-width: 500px;
+    padding: 30px;
+    width: 100%;
 
-    &__shade {
-        background: rgba(248, 250, 251, 0.01);
-        backdrop-filter: blur(10px);
-        height: 100%;
-        position: absolute;
+    &.fancybox-content {
+        padding: 30px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        max-width: 260px;
         width: 100%;
-        z-index: 0;
     }
 
-    &__inner {
-        align-items: center;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        left: 0;
-        padding: 16px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-    }
+    &__bottom {
+        font-size: 14px;
+        line-height: 1.57142;
+        margin-top: 30px;
+        text-align: center;
 
-    &__closer {
-        @include button-reset;
-        @include active-area;
-        align-items: center;
-        display: flex;
-        height: 24px;
-        justify-content: center;
-        left: auto;
-        position: absolute;
-        right: 16px;
-        top: 16px;
-        width: 24px;
-        @include hover {
-            svg {
-                fill: var(--accent);
+        p {
+            &:not(:last-child) {
+                margin-bottom: 5px;
             }
         }
 
-        svg {
-            fill: var(--white);
-            height: 24px;
-            width: 24px;
-        }
-    }
-
-    &__form {
-        background-color: var(--black);
-        border-radius: 12px;
-        color: var(--white);
-        max-width: 408px;
-        padding: 32px;
-        position: relative;
-        width: 100%;
-
-        .button {
-            font-size: 16px;
-            margin-top: 8px;
-            width: 100%;
+        a {
+            font-weight: 600;
         }
     }
 }

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="INDIE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page page--banner">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="INDIE">
+            </div>
+    
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Категории</a>
+    
+                        <div class="sub-menu">
+                            <div class="sub-menu__inner container">
+                                <p class="sub-menu__title">Жанр</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/rpg.svg" alt="">Ролевые игры</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/strategy.svg" alt="">Стратегии</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/adventure.svg" alt="">Приключение</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/racing.svg" alt="">Гонки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/sport.svg" alt="">Спорт</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/action.svg" alt="">Экшн</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/arcade.svg" alt="">Аркада</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/puzzle.svg" alt="">Головоломки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/kids.svg" alt="">Детские</a></li>
+                                </ul>
+    
+                                <p class="sub-menu__title">Платформа</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/win.svg" alt="">Windows</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/macos.svg" alt="">MacOS</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/android.svg" alt="">Android</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/ios.svg" alt="">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Статьи</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Премиум аккаунт</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="header__search-opener" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="user-link" href="#">
+                    <span class="user-link__avatar">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user_icon" />
+                        </svg>
+                    </span>
+    
+                    <span class="user-link__text">Войти</span>
+                </a>
+    
+                <button class="js-mobile-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="game">
+                <div class="game__banner-block">
+                    <div class="game__banner-content game__banner-content--no_image">
+                        <img src="images/logo_white.svg" alt="">
+                        <p>Здесь пока нет фото, но обязательно скоро появится.</p>
+                    </div>
+
+                    <div class="container">
+                        <ul class="breadcrumbs breadcrumbs--bubble">
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Ролевая игра</a></li>
+                            <li class="breadcrumbs__item">Planet of Lana</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="game__content-block">
+                    <div class="game__sidebar">
+                        <div class="game__sidebar-top">
+                            <div class="game__preview-image game__preview-image--no_image">
+                                <img src="images/logo_white.svg" alt="">
+
+                                <p>Здесь пока нет фото,<br> но обязательно скоро появится.</p>
+
+                                <div class="game__age">16+</div>
+                            </div>
+
+                            <div class="game__sidebar-buttons">
+                                <a class="button button--primary" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#steam_icon" />
+                                    </svg>
+                                    Steam
+                                </a>
+
+                                <a class="button button--primary" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#my_icon" />
+                                    </svg>
+                                    MyGames
+                                </a>
+
+                                <hr>
+
+                                <button class="button button--secondary" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    Отслеживать
+                                </button>
+
+                                <button class="button button--secondary" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#donate_icon" />
+                                    </svg>
+                                    Пожертвовать проекту
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="game__details">
+                            <p class="game__details-title">Детали игры</p>
+
+                            <p class="game__details-subtitle">Жанр:</p>
+
+                            <ul class="game__details-list game__details-list--separator">
+                                <li><a href="#">Приключение</a></li>
+                                <li><a href="#">Головоломка</a></li>
+                                <li><a href="#">Платформер</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Тэги</p>
+
+                            <ul class="game__details-list">
+                                <li><a class="game__tag" href="#">2D</a></li>
+                                <li><a class="game__tag" href="#">Насыщенный сюжет</a></li>
+                                <li><a class="game__tag" href="#">Приключение</a></li>
+                                <li><a class="game__tag" href="#">Головоломка</a></li>
+                                <li><a class="game__tag" href="#">Платформер</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Дата выхода</p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#android_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ios_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__release">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#macos_icon" />
+                                </svg>
+                                23 мая 2023
+                            </p>
+
+                            <p class="game__details-subtitle">Языки</p>
+
+                            <ul class="game__details-list game__details-list--separator">
+                                <li><a href="#">Русский</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">Italiano</a></li>
+                            </ul>
+
+                            <p class="game__details-subtitle">Разработчик</p>
+
+                            <p><a href="#">Thunderful Studio</a></p>
+
+                            <p class="game__details-title">Связаться с нами</p>
+
+                            <div class="game__contacts">
+                                <a class="contact-link" href="tel:+79991112233">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                    </svg>
+                                    <span>+7 999 111 22 33</span>
+                                </a>
+
+                                <a class="contact-link" href="mailto:+thunderful@mail.com">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#email_icon" />
+                                    </svg>
+                                    <span>thunderful@mail.com</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#tg_2_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#wa_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+
+                                <a class="contact-link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#vk_2_icon" />
+                                    </svg>
+                                    <span>@thunderful</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game__content">
+                        <h1>Planet of Lana</h1>
+
+                        <div class="game__short-info">
+                            <div class="game__rating">
+                                <div class="rating rating--small rating--up">
+                                    <span class="rating__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#like_icon" />
+                                        </svg>
+                                    </span>
+                                    32
+                                </div>
+
+                                <div class="rating rating--small rating--down">
+                                    <span class="rating__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#dislike_icon" />
+                                        </svg>
+                                    </span>
+                                    4
+                                </div>
+                            </div>
+
+                            <span class="game__short-info-delimeter"></span>
+
+                            <div class="game__platform">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#android_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ios_icon" />
+                                </svg>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#macos_icon" />
+                                </svg>
+                            </div>
+
+                            <span class="game__short-info-delimeter"></span>
+
+                            <p class="game__language">Русский, English</p>
+                        </div>
+
+                        <div class="game__preview-text">
+                            <p>Отправляйтесь на спасательную миссию вместе с главной героиней и ее верным другом в красочном мире, полном бездушных машин и неизведанных существ. Planet of Lana – это грандиозный квест-головоломка,</p>
+                        </div>
+
+                        <div class="game__slider">
+                            <div class="js-gallery swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" href="images/content/game/banner@2x.jpg" data-fancybox="screenshots" data-caption="Скриншот">
+                                            <img src="images/content/game/img_2.jpg" srcset="images/content/game/img_2@2x.jpg 2x" alt="Картинка 1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="gallery-item" data-fancybox-type="iframe" data-fancybox="screenshots" data-caption="Скриншот" href="https://www.youtube.com/embed/j5bwax143eU?autoplay=1&amp;controls=1&amp;rel=0&amp;modestbranding=1">
+                                            <img src="images/content/game/img_1.jpg" srcset="images/content/game/img_1@2x.jpg 2x" alt="Картинка 1">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#play_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </button>
+
+                            <button class="swiper-button-next" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="game__tabs">
+                            <div class="tabs">
+                                <div class="tabs-nav">
+                                    <button class="js-tab-button tabs-nav__button is-active" type="button" data-tab="1">Об игре</button>
+                                    <button class="js-tab-button tabs-nav__button" type="button" data-tab="2">Системные требования</button>
+                                    <button class="js-tab-button tabs-nav__button" type="button" data-tab="3">Обновления</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <h2>Геймплей</h2>
+
+                                    <p>Игровой процесс состоит из платформенных действий и решения головоломок. Малозаметный, но приятный элемент — разработчики дают свободно пробежаться и насладиться красотой игры, а не просто толкают к очередным
+                                        испытаниям.</p>
+
+                                    <h2>Ключевые способности</h2>
+
+                                    <ul>
+                                        <li>Уникальный игровой процесс, основанный на взаимодействиях со спутником.</li>
+                                        <li>Решайте головоломки и проходите разные испытания со множеством неожиданных поворотов.</li>
+                                        <li>Осторожно избегайте опасностей с помощью скрытности и смекалки.</li>
+                                        <li>Положитесь на скорость реакции, чтобы уцелеть в особенно трудные мгновения.</li>
+                                        <li>Насладитесь повествованием, размах которого охватывает галактики и столетия.</li>
+                                    </ul>
+
+                                    <h2>Особенности игры</h2>
+
+                                    <ul>
+                                        <li>Облачные сохранения</li>
+                                        <li>Поддержка контролера</li>
+                                        <li>Оверлей</li>
+                                        <li>Одиночная игра</li>
+                                    </ul>
+                                </div>
+                                <div class="tab" data-tab="2">
+                                    <div class="sys-reqs">
+                                        <p class="sys-reqs__title">Windows</p>
+
+                                        <p class="sys-reqs__subtitle">Минимальные системные требования</p>
+
+                                        <div class="sys-reqs__grid">
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>ОС</b></p>
+                                                <p>Windows 7</p>
+                                            </div>
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>Процессор</b></p>
+                                                <p>1.2 GHZ</p>
+                                            </div>
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>Оперативная память</b></p>
+                                                <p>2 GB ОЗУ</p>
+                                            </div>
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>Место на диске</b></p>
+                                                <p>320 MB</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="sys-reqs__title">MacOS</p>
+
+                                        <p class="sys-reqs__subtitle">Минимальные системные требования</p>
+
+                                        <div class="sys-reqs__grid">
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>ОС</b></p>
+                                                <p>Mac OS</p>
+                                            </div>
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>Процессор</b></p>
+                                                <p>1.2 GHZ</p>
+                                            </div>
+                                            <div class="sys-reqs__grid-item">
+                                                <p><b>Оперативная память</b></p>
+                                                <p>2 MB ОЗУ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab" data-tab="3"></div>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <p class="info-block__title">Вы разработчик этой&nbsp;игры?</p>
+
+                            <div class="info-block__text">
+                                <p>Информация размещенная на странице взята из открытых источников. Если вы являетесь владельцем этой игры, то обратитесь к нам, по запросу мы можем удалить игру с сайта.</p>
+                            </div>
+
+                            <a class="button button--primary" href="#game_owner_right" data-fancybox="">Подтвердить права на игру</a>
+                        </div>
+
+                        <div class="reviews">
+                            <div class="reviews__title-block">
+                                <p class="reviews__title">Отзывы об игре (3656)</p>
+
+                                <div class="reviews__counts">
+                                    <div class="rating rating--up">
+                                        <span class="rating__icon">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#like_icon" />
+                                            </svg>
+                                        </span>
+                                        3056
+                                    </div>
+
+                                    <div class="rating rating--down">
+                                        <span class="rating__icon">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#dislike_icon" />
+                                            </svg>
+                                        </span>
+                                        600
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="reviews__form">
+                                <div class="reviews__form-top">
+                                    <div class="reviews__author-avatar">
+                                        <img src="images/content/reviews/user_avatar_big.jpg" srcset="images/content/reviews/user_avatar_big@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <div>
+                                        <p class="reviews__form-title">Рекомендуете ли вы эту игру?</p>
+
+                                        <div class="reviews__rating">
+                                            <button class="rating rating--button rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                Да
+                                            </button>
+
+                                            <button class="rating rating--button rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                Нет
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__form-bottom">
+
+                                    <textarea class="textarea" placeholder="Напишите отзыв об игре"></textarea>
+
+                                    <button class="button button--primary" type="submit">Отправить</button>
+                                </div>
+                            </form>
+
+                            <div class="reviews-list">
+                                <div class="review">
+                                    <div class="review__top">
+                                        <div class="review__author">
+                                            <div class="reviews__author-avatar">
+                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                            </div>
+
+                                            <div class="review__author-name-block">
+                                                <p class="review__author-name">Анна А.</p>
+                                                <time class="review__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                            </div>
+                                        </div>
+
+                                        <div class="review__rating rating rating--up">
+                                            <span class="rating__icon">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#like_icon" />
+                                                </svg>
+                                            </span>
+                                            Рекомендую
+                                        </div>
+                                    </div>
+
+                                    <div class="review__text">
+                                        <p>Ожидание: пройду через "семейный доступ", удалю и забуду.<br> Реальность: прошла игру, купила на акк.</p>
+                                        <p>Милая, красивая, душевная, сбалансирована в повествовании, идеальна для криворучек.<br> Громаднейшую
+                                            атмосферу даёт очень качественный звук (на который частенько забивают в симпатишных платформерах).</p>
+                                    </div>
+
+                                    <div class="review__actions">
+                                        <div class="review__ratings">
+                                            <button class="rating rating--small rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                5070
+                                            </button>
+
+                                            <button class="rating rating--small rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                3
+                                            </button>
+                                        </div>
+
+                                        <button class="review__answer-button" type="button">Ответить</button>
+                                    </div>
+
+                                    <div class="review__answers">
+                                        <hr>
+
+                                        <div class="review-answer">
+                                            <div class="review-answer__author">
+                                                <div class="review-answer__author-avatar">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                                </div>
+
+                                                <div class="review-answer__author-name-block">
+                                                    <p class="review-answer__author-name">Анна А.</p>
+                                                    <time class="review-answer__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                                </div>
+                                            </div>
+
+                                            <div class="review-answer__text">
+                                                <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
+                                            </div>
+
+                                            <div class="review-answer__actions">
+                                                <button class="review-answer__answer-button" type="button">Ответить</button>
+
+                                                <div class="review-answer__ratings">
+                                                    <button class="rating rating--small rating--up" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#like_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        5070
+                                                    </button>
+
+                                                    <button class="rating rating--small rating--down" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        3
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="review-answer">
+                                            <div class="review-answer__author">
+                                                <div class="review-answer__author-avatar">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                                </div>
+
+                                                <div class="review-answer__author-name-block">
+                                                    <p class="review-answer__author-name">Анна А.</p>
+                                                    <time class="review-answer__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                                </div>
+                                            </div>
+
+                                            <div class="review-answer__text">
+                                                <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
+                                            </div>
+
+                                            <div class="review-answer__actions">
+                                                <button class="review-answer__answer-button" type="button">Ответить</button>
+
+                                                <div class="review-answer__ratings">
+                                                    <button class="rating rating--small rating--up" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#like_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        5070
+                                                    </button>
+
+                                                    <button class="rating rating--small rating--down" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        3
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <form class="answer-form" action="">
+                                            <div class="answer-form__author-avatar">
+                                                <img src="images/content/reviews/user_avatar_big.jpg" srcset="images/content/reviews/user_avatar_big@2x.jpg 2x" alt="">
+                                            </div>
+
+                                            <label class="answer-form__label">
+                                                <textarea class="answer-form__textarea textarea" placeholder="Написать комментарий"></textarea>
+                                            </label>
+
+                                            <button class="answer-form__submit" type="submit" title="Отправить">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#send_icon" />
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="review">
+                                    <div class="review__top">
+                                        <div class="review__author">
+                                            <div class="reviews__author-avatar">
+                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                            </div>
+
+                                            <div class="review__author-name-block">
+                                                <p class="review__author-name">vikingx84</p>
+                                                <time class="review__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                            </div>
+                                        </div>
+
+                                        <div class="review__rating rating rating--up">
+                                            <span class="rating__icon">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#like_icon" />
+                                                </svg>
+                                            </span>
+                                            Рекомендую
+                                        </div>
+                                    </div>
+
+                                    <div class="review__text">
+                                        <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
+                                    </div>
+
+                                    <div class="review__actions">
+                                        <div class="review__ratings">
+                                            <button class="rating rating--small rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                5070
+                                            </button>
+
+                                            <button class="rating rating--small rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                3
+                                            </button>
+                                        </div>
+
+                                        <button class="review__answer-button" type="button">Ответить</button>
+                                    </div>
+                                </div>
+
+                                <div class="review">
+                                    <div class="review__top">
+                                        <div class="review__author">
+                                            <div class="reviews__author-avatar">
+                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                            </div>
+
+                                            <div class="review__author-name-block">
+                                                <p class="review__author-name">ΛNNYHIlΛT0R</p>
+                                                <time class="review__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                            </div>
+                                        </div>
+
+                                        <div class="review__rating rating rating--down">
+                                            <span class="rating__icon">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                </svg>
+                                            </span>
+                                            Не рекомендую
+                                        </div>
+                                    </div>
+
+                                    <div class="review__text">
+                                        <p>"Planet of Lana" буквально повторяет все ошибки Somerville. Снова красивая пустышка. Wishfully, наймите себе хороших сценаристов, и учитесь у Tarsier Studios с их дилогией "Little nightmares". Вот как
+                                            нужно делать сайдскроллеры.</p>
+                                    </div>
+
+                                    <div class="review__actions">
+                                        <div class="review__ratings">
+                                            <button class="rating rating--small rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                5070
+                                            </button>
+
+                                            <button class="rating rating--small rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                3
+                                            </button>
+                                        </div>
+
+                                        <button class="review__answer-button" type="button">Ответить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="show-more">
+                                <a class="button button--primary" href="#">Показать еще</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__column">
+                <div class="footer__logo"><img src="images/logo.svg" alt="INDIE"></div>
+    
+                <p class="footer__copyrights">©&nbsp;2024<br> ООО ИНДИГЭЙМС, Россия, г. Москва</p>
+            </div>
+    
+            <div class="footer__column">
+                <div class="footer-socials">
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Премиум аккаунт</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Размещения рекламы</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Техническая поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/main.js"></script>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

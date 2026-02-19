@@ -40,7 +40,7 @@
                 <div class="game__content-block">
                     <div class="game__sidebar">
                         <div class="game__sidebar-top">
-                            <div class="game__preview-image">
+                            <div class="game__preview-image game__preview-image--uploaded">
                                 <img src="images/content/game/preview.jpg" srcset="images/content/game/preview@2x.jpg 2x" alt="Planet of Lana">
 
                                 <div class="game__age">16+</div>
@@ -529,9 +529,121 @@
                                             </button>
                                         </div>
 
-                                        <button class="review__answer" type="button">Ответить</button>
+                                        <button class="review__answer-button" type="button">Ответить</button>
+                                    </div>
 
+                                    <div class="review__answers">
                                         <hr>
+
+                                        <div class="review-answer">
+                                            <div class="review-answer__author">
+                                                <div class="review-answer__author-avatar">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                                </div>
+
+                                                <div class="review-answer__author-name-block">
+                                                    <p class="review-answer__author-name">Анна А.</p>
+                                                    <time class="review-answer__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                                </div>
+                                            </div>
+
+                                            <div class="review-answer__text">
+                                                <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
+                                            </div>
+
+                                            <div class="review-answer__actions">
+                                                <button class="review-answer__answer-button" type="button">Ответить</button>
+
+                                                <div class="review-answer__ratings">
+                                                    <button class="rating rating--small rating--up" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#like_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        5070
+                                                    </button>
+
+                                                    <button class="rating rating--small rating--down" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        3
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="review-answer">
+                                            <div class="review-answer__author">
+                                                <div class="review-answer__author-avatar">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                                </div>
+
+                                                <div class="review-answer__author-name-block">
+                                                    <p class="review-answer__author-name">Анна А.</p>
+                                                    <time class="review-answer__date" datetime="2024-04-20 17:03">20 апреля 2024 17:03</time>
+                                                </div>
+                                            </div>
+
+                                            <div class="review-answer__text">
+                                                <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
+                                            </div>
+
+                                            <div class="review-answer__actions">
+                                                <button class="review-answer__answer-button" type="button">Ответить</button>
+
+                                                <div class="review-answer__ratings">
+                                                    <button class="rating rating--small rating--up" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#like_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        5070
+                                                    </button>
+
+                                                    <button class="rating rating--small rating--down" type="button">
+                                                        <span class="rating__icon">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                            </svg>
+                                                            <svg class="filled" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                            </svg>
+                                                        </span>
+                                                        3
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <form class="answer-form" action="">
+                                            <div class="answer-form__author-avatar">
+                                                <img src="images/content/reviews/user_avatar_big.jpg" srcset="images/content/reviews/user_avatar_big@2x.jpg 2x" alt="">
+                                            </div>
+
+                                            <label class="answer-form__label">
+                                                <textarea class="answer-form__textarea textarea" placeholder="Написать комментарий"></textarea>
+                                            </label>
+
+                                            <button class="answer-form__submit" type="submit" title="Отправить">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#send_icon" />
+                                                </svg>
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
 
@@ -561,6 +673,36 @@
                                     <div class="review__text">
                                         <p>Отличная игра, отличное приключение, очень красиво и атмосферно, жаль что коротковата, я бы еще попроходил.</p>
                                     </div>
+
+                                    <div class="review__actions">
+                                        <div class="review__ratings">
+                                            <button class="rating rating--small rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                5070
+                                            </button>
+
+                                            <button class="rating rating--small rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                3
+                                            </button>
+                                        </div>
+
+                                        <button class="review__answer-button" type="button">Ответить</button>
+                                    </div>
                                 </div>
 
                                 <div class="review">
@@ -589,6 +731,36 @@
                                     <div class="review__text">
                                         <p>"Planet of Lana" буквально повторяет все ошибки Somerville. Снова красивая пустышка. Wishfully, наймите себе хороших сценаристов, и учитесь у Tarsier Studios с их дилогией "Little nightmares". Вот как
                                             нужно делать сайдскроллеры.</p>
+                                    </div>
+
+                                    <div class="review__actions">
+                                        <div class="review__ratings">
+                                            <button class="rating rating--small rating--up" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#like_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_like_icon" />
+                                                    </svg>
+                                                </span>
+                                                5070
+                                            </button>
+
+                                            <button class="rating rating--small rating--down" type="button">
+                                                <span class="rating__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#dislike_icon" />
+                                                    </svg>
+                                                    <svg class="filled" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#filled_dislike_icon" />
+                                                    </svg>
+                                                </span>
+                                                3
+                                            </button>
+                                        </div>
+
+                                        <button class="review__answer-button" type="button">Ответить</button>
                                     </div>
                                 </div>
                             </div>

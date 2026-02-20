@@ -40,6 +40,13 @@ html {
         }
     }
 
+    &--main {
+        .page__content {
+            padding-top: var(--header_min_height);
+            padding-bottom: 50px;
+        }
+    }
+
     &--personal {
         .page__content {
             padding-top: calc(50px + var(--header_min_height));
@@ -82,6 +89,10 @@ html {
     margin-right: auto;
     padding-left: var(--container_padding);
     padding-right: var(--container_padding);
+
+    &--big {
+        max-width: var(--container_big_max_width);
+    }
 }
 
 .h1,

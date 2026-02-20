@@ -9,9 +9,9 @@
     font-size: 16px;
     font-weight: 400;
     gap: 5px;
+    height: 44px;
     justify-content: center;
     line-height: 1.5;
-    min-height: 44px;
     padding: 8px 30px;
     text-decoration: none;
     text-align: center;
@@ -55,6 +55,86 @@
             @include hover {
                 border-color: var(--button_hover);
                 color: var(--button_hover);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
+        }
+    }
+
+    &--primary_round {
+        background-color: var(--accent_3);
+        border-radius: 20px;
+        color: var(--white);
+        font-weight: 600;
+        height: 40px;
+        padding: 8px 20px;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--accent);
+                color: var(--white);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
+        }
+    }
+
+    &--secondary_round {
+        background-color: var(--white);
+        border-color: var(--text_grey_light);
+        border-radius: 20px;
+        color: var(--black);
+        font-weight: 600;
+        height: 40px;
+        padding: 8px 20px;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border-color: var(--accent);
+                color: var(--accent);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
+        }
+    }
+
+    &--white_round {
+        background-color: transparent;
+        border-color: var(--white);
+        border-radius: 20px;
+        color: var(--white);
+        font-weight: 600;
+        height: 40px;
+        padding: 8px 20px;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border-color: var(--accent_3);
+                color: var(--accent_3);
             }
         }
 

@@ -23,7 +23,7 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: var(--section_vertical_gap);
     }
 
     &__share {
@@ -65,8 +65,8 @@
 
     img {
         display: block;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: var(--section_vertical_gap);
+        margin-bottom: var(--section_vertical_gap);
 
         &:first-child {
             margin-top: 0;

@@ -15,9 +15,9 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: 50px;
+        margin-bottom: var(--section_vertical_gap);
         @media(min-width: $sm) {
-            margin-bottom: 100px;
+            margin-bottom: calc(var(--section_vertical_gap) * 2);
         }
     }
 

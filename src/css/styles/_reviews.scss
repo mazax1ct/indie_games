@@ -27,7 +27,7 @@
 
     &__form {
         &:not(:last-child) {
-            margin-bottom: 50px;
+            margin-bottom: var(--section_vertical_gap);
         }
     }
 

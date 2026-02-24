@@ -4,7 +4,7 @@
         position: relative;
         padding-top: 50px;
         z-index: 0;
-        margin-bottom: 50px;
+        margin-bottom: var(--section_vertical_gap);
         margin-left: calc(0.01px - var(--container_padding));
         margin-right: calc(0.01px - var(--container_padding));
         @media(min-width: 1190px) {
@@ -81,7 +81,7 @@
 
     &__sidebar {
         @media(max-width: $md - 0.02px) {
-            margin-bottom: 50px;
+            margin-bottom: var(--section_vertical_gap);
         }
         @media(min-width: $md) {
             min-width: 360px;
@@ -105,7 +105,7 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 50px;
+            margin-bottom: var(--section_vertical_gap);
         }
     }
 
@@ -335,7 +335,7 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 50px;
+            margin-bottom: var(--section_vertical_gap);
         }
 
         .swiper-slide {
@@ -384,7 +384,7 @@
 
     &__tabs {
         &:not(:last-child) {
-            margin-bottom: 50px;
+            margin-bottom: var(--section_vertical_gap);
         }
 
         .tabs-nav {

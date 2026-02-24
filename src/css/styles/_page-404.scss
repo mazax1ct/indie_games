@@ -3,7 +3,7 @@
 
     &__logo {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: var(--section_vertical_gap);
         margin-left: auto;
         margin-right: auto;
         width: 114px;
@@ -11,7 +11,7 @@
 
     &__404 {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: var(--section_vertical_gap);
         margin-left: auto;
         margin-right: auto;
         width: 315px;

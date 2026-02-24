@@ -11,7 +11,7 @@
     white-space: nowrap;
 
     &--default {
-        margin-bottom: 50px;
+        margin-bottom: var(--section_vertical_gap);
     }
 
     &--bubble {

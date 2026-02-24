@@ -47,15 +47,6 @@ html {
         }
     }
 
-    &--personal {
-        .page__content {
-            padding-top: calc(50px + var(--header_min_height));
-            @media(min-width: $md) {
-                padding-top: calc(100px + var(--header_min_height));
-            }
-        }
-    }
-
     &--404 {
         .page__content {
             background-color: var(--accent_2);
@@ -291,7 +282,7 @@ blockquote {
     }
 }
 
-.table {
+table {
     border-collapse: collapse;
     border: 1px solid #E6E6E6;
     width: 100%;

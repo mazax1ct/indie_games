@@ -76,20 +76,24 @@
 
     &__table {
         border-collapse: collapse;
+        border: none;
         width: 100%;
 
         th {
-            color: var(--grey);
+            border: none;
+            background-color: transparent;
+            color: #AEAEAE;
             font-size: 18px;
             font-weight: 500;
             line-height: 1.44444;
-            padding: 0 20px 0 0;
+            padding: 0 20px 0 0 !important;
             text-align: left;
         }
 
         td {
+            border: none;
             border-bottom: 1px solid var(--grey);
-            padding: 10px 20px 10px 0;
+            padding: 20px 20px 20px 0 !important;
             @media(min-width: $md) {
                 padding-top: 20px;
                 padding-bottom: 20px;

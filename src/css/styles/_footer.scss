@@ -66,13 +66,13 @@
 .footer-menu {
     @include list-reset;
 
-    &__item {
+    li {
         &:not(:last-child) {
             margin-bottom: 10px;
         }
     }
 
-    &__link {
+    a {
         @include active-area;
         color: var(--black);
         display: block;

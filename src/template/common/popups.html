@@ -133,3 +133,35 @@
 
     <a class="popup__button button button--primary" href="#">На главную</a>
 </div>
+
+<div id="rights_confirm" class="popup">
+    <p class="popup__title h2">Подтвердить права на игру</p>
+
+    <p class="text-center">Заполните форму ниже и мы свяжемся с вами для подтверждения прав</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">ФИО <span class="required">*</span></span>
+
+            <input class="input" type="text" name="FIO" placeholder="Введите ваши ФИО" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Телефон</span>
+
+            <input class="js-phone-mask input" type="text" name="PHONE" placeholder="Введите ваш телефон">
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Отправить заявку</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p>Нажимая кнопку «Зарегистрироваться»<br> вы принимаете условия <a class="black-link" href="#" target="_blank">Пользовательского соглашения</a></p>
+    </div>
+</div>

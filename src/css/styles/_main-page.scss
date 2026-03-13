@@ -683,8 +683,12 @@
     }
 
     &__prop {
+        align-items: center;
         color: var(--text_grey_light);
+        display: flex;
+        flex-wrap: wrap;
         font-size: 12px;
+        gap: 5px 10px;
 
         &:not(:last-child) {
             margin-bottom: 5px;
@@ -705,6 +709,7 @@
         svg {
             fill: currentColor;
             height: 16px;
+            margin-top: -1px;
             min-width: 16px;
             width: 16px;
         }

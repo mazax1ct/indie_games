@@ -1,7 +1,7 @@
 .filter {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     padding: 20px;
 
     &.hidden {
@@ -131,6 +131,11 @@
 
     &__submit {
         margin-top: 20px;
+        width: 100%;
+    }
+
+    &__big-reset {
+        margin-top: 10px;
         width: 100%;
     }
 }

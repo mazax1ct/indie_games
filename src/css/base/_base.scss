@@ -14,7 +14,7 @@ html {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: calc(var(--header_min_height) + 20px);
 
     &.is-overflow {
         scrollbar-gutter: stable;
@@ -43,6 +43,15 @@ html {
     &--main {
         .page__content {
             padding-top: var(--header_min_height);
+            padding-bottom: 50px;
+        }
+    }
+
+    &--catalog {
+        --container_big_max_width: 1510px;
+
+        .page__content {
+            padding-top: calc(24px + var(--header_min_height));
             padding-bottom: 50px;
         }
     }
@@ -233,6 +242,32 @@ ul {
     }
 }
 
+figure {
+    margin: 20px 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        display: block;
+        margin-bottom: 0 !important;
+        width: 100%;
+    }
+}
+
+figcaption {
+    background-color: #fff;
+    font-size: clamp(12px, 3vw, 15px);
+    font-style: italic;
+    padding: 12px var(--container_padding);
+    text-align: center;
+}
+
 blockquote {
     display: block;
     font-size: clamp(16px, 3vw, 24px);
@@ -284,17 +319,18 @@ blockquote {
 
 table {
     border-collapse: collapse;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--accent_3);
     width: 100%;
 
     th {
-        background-color: #E6E6E6;
+        background-color: var(--accent_3);
+        font-weight: 400;
         padding: 20px;
     }
 
     td,
     th {
-        border: 1px solid #E6E6E6;
+        border: 1px solid #FFD399;
         padding: 10px;
         text-align: left;
 

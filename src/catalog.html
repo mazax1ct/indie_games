@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--catalog">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container container--big">
+            <div class="catalog">
+                <div class="catalog__sidebar">
+                    <button class="js-filter-toggler filter-toggler button button--secondary" type="button">Фильтры</button>
+
+                    <form class="filter hidden">
+                        <div class="filter__title-block">
+                            <p class="filter__title">Фильтры</p>
+
+                            <button class="filter__reset" type="reset">Сбросить все</button>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__section-title-block">
+                                <p class="filter__section-title">Жанры</p>
+
+                                <button class="js-filter-section-toggler filter__section-toggler is-active" type="button" title="Показать">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_down" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="filter__section-dropdown">
+                                <div class="filter__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="spec" value="Аркады">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Аркады</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="spec" value="РПГ">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">РПГ</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="spec" value="Action">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Action</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="spec" value="Adventure">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Adventure</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="spec" value="Файтинги">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Файтинги</span>
+                                    </label>
+
+                                    <div class="filter__list-cut">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Режиссёр">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Режиссёр</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Шутеры">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Шутеры</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Музыкальные игры">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Музыкальные игры</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Платформеры">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Платформеры</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Гонки">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Гонки</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Симуляторы">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Симуляторы</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Спортивные">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Спортивные</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Головоломки">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Головоломки</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Квесты">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Квесты</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="spec" value="Настольные">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Настольные</span>
+                                        </label>
+                                    </div>
+
+                                    <button class="js-filter-cut-toggler filter__list-cut-toggler" type="button" data-text="Скрыть">Показать еще</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__section-title-block">
+                                <p class="filter__section-title">Вознаграждение</p>
+
+                                <button class="js-filter-section-toggler filter__section-toggler is-active" type="button" title="Показать">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_down" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="filter__section-dropdown">
+                                <div class="filter__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="По договоренности">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">По договоренности</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="0 ₽ - 1 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">0 ₽ - 1 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="1 000 ₽ - 5 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">1 000 ₽ - 5 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="5 000 ₽ - 10 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">5 000 ₽ - 10 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="10 000 ₽ - 20 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">10 000 ₽ - 20 000 ₽</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="salary" value="10 000 ₽ - 20 000 ₽">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Больше 20 000 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="filter__submit button button--primary" type="submit">Фильтровать</button>
+
+                        <button class="filter__big-reset button button--secondary" type="reset">Сбросить</button>
+                    </form>
+                </div>
+
+                <div class="catalog__content">
+                    <ul class="breadcrumbs breadcrumbs--default">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                        <li class="breadcrumbs__item">Каталог игр</li>
+                    </ul>
+
+                    <h1 class="catalog__title">Каталог игр</h1>
+
+                    <div class="catalog__top-text">
+                        <p>Здесь вы найдете игры на любой вкус: от атмосферных приключений и глубоких сюжетных RPG до динамичных экшенов, головоломок и экспериментальных проектов, которые выходят за рамки привычного геймдизайна. Мы тщательно отбираем
+                            и регулярно обновляем список, чтобы вы всегда могли открыть для себя что-то новое и по-настоящему уникальное.</p>
+                    </div>
+
+                    <div class="catalog__grid">
+                        <div class="game-card game-card--premium">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+
+                                <span class="badge badge--accent_3 badge--small-xl">premium</span>
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#macos_icon" />
+                                        </svg>
+                                        MacOS
+                                    </span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#android_icon" />
+                                        </svg>
+                                        Android
+                                    </span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#ios_icon" />
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card--premium">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+
+                                <span class="badge badge--accent_3 badge--small-xl">premium</span>
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card--premium">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+
+                                <span class="badge badge--accent_3 badge--small-xl">premium</span>
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card--premium">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+
+                                <span class="badge badge--accent_3 badge--small-xl">premium</span>
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#macos_icon" />
+                                        </svg>
+                                        MacOS
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card--premium">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+
+                                <span class="badge badge--accent_3 badge--small-xl">premium</span>
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#android_icon" />
+                                        </svg>
+                                        Android
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#macos_icon" />
+                                        </svg>
+                                        MacOS
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#android_icon" />
+                                        </svg>
+                                        Android
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#macos_icon" />
+                                        </svg>
+                                        MacOS
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#android_icon" />
+                                        </svg>
+                                        Android
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#win_platform_icon" />
+                                        </svg>
+                                        Windows
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#macos_icon" />
+                                        </svg>
+                                        MacOS
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="game-card">
+                            <div class="game-card__image">
+                                <img src="images/content/main-page/game.jpg" srcset="images/content/main-page/game@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="game-card__info">
+                                <p class="game-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                                <p class="game-card__preview-text">Хардкорная нарративная ролевая игра о мире, которым правят реальные, но тупые придурки</p>
+
+                                <p class="game-card__prop"><span class="game-card__prop-title">Разработка:</span> Server, Schima Games</p>
+                                <p class="game-card__prop"><span class="game-card__prop-title">Жанр:</span> Ролевая игра</p>
+                                <p class="game-card__prop">
+                                    <span class="game-card__prop-title">Платформа:</span>
+                                    <span class="game-card__platform">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#android_icon" />
+                                        </svg>
+                                        Android
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-more">
+                        <a class="button button--primary" href="#">Показать еще</a>
+                    </div>
+
+                    <ul class="pager">
+                        <li>
+                            <span class="pager__link">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="pager__link is-active" href="#">1</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">2</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">3</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">4</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">5</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+
+    <script src="js/filter.js"></script>
+</body>
+
+</html>

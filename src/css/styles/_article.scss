@@ -1,62 +1,6 @@
 .article {
-    & > .article__author {
-        margin-bottom: 24px;
-    }
-
-    &__author {
-        color: var(--accent);
-        font-weight: 700;
-        margin-bottom: 0;
-
-        small {
-            color: var(--black);
-            display: block;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 1.33333;
-            margin-bottom: 5px;
-        }
-    }
-
-    &__bottom {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: space-between;
-        margin-top: var(--section_vertical_gap);
-    }
-
-    &__share {
-        small {
-            color: var(--black);
-            display: block;
-            font-size: 12px;
-            line-height: 1.33333;
-            margin-bottom: 5px;
-        }
-    }
-
-    &__share-list {
-        @include list-reset;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    &__share-link {
-        align-items: center;
-        background-color: var(--accent_2);
-        display: flex;
-        height: 20px;
-        justify-content: center;
-        min-width: 30px;
-        width: 30px;
-
-        svg {
-            fill: var(--white);
-            height: 16px;
-            width: 16px;
-        }
+    &:not(:last-child) {
+        margin-bottom: var(--section_vertical_gap);
     }
 
     h2 {
@@ -76,12 +20,50 @@
             margin-bottom: 0;
         }
     }
+
+    & > ul {
+        &:not([class]) {
+            list-style: none;
+
+            li {
+                padding-left: 32px;
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23ff9100' stroke-linecap='round' stroke-linejoin='round' d='M4 7.333h2.667M5.333 6v2.667M10 8h.007M12 6.667h.007m-.46-3.334H4.453a2.667 2.667 0 0 0-2.652 2.394q-.005.05-.011.101c-.054.45-.457 3.81-.457 4.839a2 2 0 0 0 2 2c.667 0 1-.334 1.334-.667l.942-.943c.25-.25.59-.39.943-.39h2.896c.354 0 .693.14.943.39l.942.943c.334.333.667.667 1.334.667a2 2 0 0 0 2-2c0-1.03-.403-4.39-.457-4.839q-.006-.05-.011-.1a2.667 2.667 0 0 0-2.652-2.395'/%3E%3C/svg%3E");
+                    background-color: transparent;
+                    border-radius: 0;
+                    content: '';
+                    height: 16px;
+                    left: 0;
+                    position: absolute;
+                    top: 0.26em;
+                    width: 16px;
+                    z-index: 1;
+                }
+
+                & > ul {
+                    li {
+                        padding-left: 28px;
+
+                        &::before {
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 12 12'%3E%3Cpath stroke='%23ff9100' stroke-linecap='round' stroke-linejoin='round' d='M10.5 8V4a1 1 0 0 0-.5-.865l-3.5-2a1 1 0 0 0-1 0l-3.5 2A1 1 0 0 0 1.5 4v4a1 1 0 0 0 .5.865l3.5 2a1 1 0 0 0 1 0l3.5-2A1 1 0 0 0 10.5 8'/%3E%3C/svg%3E");
+                            height: 12px;
+                            top: 0.36em;
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .article-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 30px;
+    gap: 15px 30px;
     justify-content: space-between;
 
     &:not(:last-child) {
@@ -94,7 +76,7 @@
 
     &__group {
         display: flex;
-        gap: 10px 20px;
+        gap: 15px 20px;
         flex-wrap: wrap;
         @media(max-width: $md - 0.02px) {
             width: 100%;
@@ -116,7 +98,7 @@
     &__details {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px 30px;
+        gap: 15px 30px;
         @media(max-width: $md - 0.02px) {
             width: 100%;
         }

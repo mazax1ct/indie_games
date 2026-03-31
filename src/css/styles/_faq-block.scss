@@ -1,0 +1,7 @@
+.faq-block {
+    max-width: 795px;
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_vertical_gap);
+    }
+}

@@ -1,0 +1,21 @@
+.linked-tags {
+    &:not(:last-child) {
+        margin-bottom: var(--section_vertical_gap);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__tag {
+        border-radius: 5px;
+        border: 1px solid currentColor;
+        color: var(--accent);
+        display: inline-block;
+        line-height: 1.25;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+}

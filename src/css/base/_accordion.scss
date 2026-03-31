@@ -1,0 +1,64 @@
+.accordion {
+    background-color: #fff;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__title-block {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        position: relative;
+        padding: 20px;
+        z-index: 0;
+        @include hover {
+            .accordion__title {
+                color: var(--accent_3);
+            }
+
+            .accordion__toggler,
+            .accordion__toggler.is-active {
+                color: var(--accent_3);
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        margin: 0;
+        transition: color 0.3s;
+    }
+
+    &__toggler {
+        @include button-reset;
+        @include active-area;
+        color: var(--black);
+        height: 24px;
+        min-width: 24px;
+        transition: color 0.3s;
+        width: 24px;
+
+        &.is-active {
+            color: var(--accent_3);
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            transition: color 0.3s;
+            width: 24px;
+        }
+    }
+
+    &__body {
+        color: var(--text_grey_light);
+        display: none;
+        padding: 0 20px 20px;
+    }
+}

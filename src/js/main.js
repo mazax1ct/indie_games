@@ -61,3 +61,15 @@ $(".js-date-mask").each(function(index, element) {
     }*/
   });
 });
+
+//аккордеон
+$(document).on('click', '.js-accordion-toggler', function () {
+  if(!$(this).hasClass('is-active')) {
+    $(this).addClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideDown();
+  } else {
+    $(this).removeClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideUp();
+  }
+  return false;
+});

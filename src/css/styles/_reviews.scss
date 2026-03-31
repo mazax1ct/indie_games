@@ -1,4 +1,6 @@
 .reviews {
+    max-width: 760px;
+
     &__title-block {
         align-items: center;
         border-bottom: 1px solid var(--black);
@@ -23,6 +25,14 @@
     &__counts {
         display: flex;
         gap: 10px;
+    }
+
+    &__add-comment-block {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: var(--section_vertical_gap);
+        }
     }
 
     &__form {

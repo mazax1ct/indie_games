@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>INDIE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="INDIE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="INDIE">
+            </div>
+    
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Категории</a>
+    
+                        <div class="sub-menu">
+                            <div class="sub-menu__inner container">
+                                <p class="sub-menu__title">Жанр</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/rpg.svg" alt="">Ролевые игры</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/strategy.svg" alt="">Стратегии</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/adventure.svg" alt="">Приключение</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/racing.svg" alt="">Гонки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/sport.svg" alt="">Спорт</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/action.svg" alt="">Экшн</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/arcade.svg" alt="">Аркада</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/puzzle.svg" alt="">Головоломки</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/kids.svg" alt="">Детские</a></li>
+                                </ul>
+    
+                                <p class="sub-menu__title">Платформа</p>
+    
+                                <ul class="sub-menu__list">
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/win.svg" alt="">Windows</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/macos.svg" alt="">MacOS</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/android.svg" alt="">Android</a></li>
+                                    <li class="sun-menu__item"><a class="sub-menu__link" href="#"><img src="images/icons/menu-icons/ios.svg" alt="">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Статьи</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href="#">Премиум аккаунт</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header__right">
+                <button class="header__search-opener" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="user-link" href="#">
+                    <span class="user-link__avatar">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user_icon" />
+                        </svg>
+                    </span>
+    
+                    <span class="user-link__text">Войти</span>
+                </a>
+    
+                <button class="js-mobile-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs breadcrumbs--default">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                <li class="breadcrumbs__item">Блог</li>
+            </ul>
+
+            <div class="blog">
+                <div class="blog__content">
+                    <div class="blog__text-block">
+                        <h1>Блог</h1>
+
+                        <p>Здесь вы найдете игры на любой вкус: от атмосферных приключений и глубоких сюжетных RPG до динамичных экшенов, головоломок и экспериментальных проектов, которые выходят за рамки привычного геймдизайна. Мы тщательно отбираем
+                            и регулярно обновляем список, чтобы вы всегда могли открыть для себя что-то новое и по-настоящему уникальное.</p>
+                    </div>
+
+                    <div class="blog-list">
+                        <div class="blog-card">
+                            <div class="blog-card__props">
+                                <time class="blog-card__prop" datetime="2026-03-02">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                    <span>02.03.2026</span>
+                                </time>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eye_icon" />
+                                    </svg>
+                                    <span>1550</span>
+                                </div>
+                            </div>
+
+                            <p class="blog-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                            <p class="blog-card__preview-text">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit
+                                eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus.</p>
+
+                            <div class="blog-card__image">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="blog-card__props">
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    <span>4.8 (125 оценок)</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    <span>20 мин.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card__props">
+                                <time class="blog-card__prop" datetime="2026-03-02">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                    <span>02.03.2026</span>
+                                </time>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eye_icon" />
+                                    </svg>
+                                    <span>1550</span>
+                                </div>
+                            </div>
+
+                            <p class="blog-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                            <p class="blog-card__preview-text">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit
+                                eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus.</p>
+
+                            <div class="blog-card__image">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="blog-card__props">
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    <span>4.8 (125 оценок)</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    <span>20 мин.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card__props">
+                                <time class="blog-card__prop" datetime="2026-03-02">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                    <span>02.03.2026</span>
+                                </time>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eye_icon" />
+                                    </svg>
+                                    <span>1550</span>
+                                </div>
+                            </div>
+
+                            <p class="blog-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                            <p class="blog-card__preview-text">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit
+                                eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus.</p>
+
+                            <div class="blog-card__image">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="blog-card__props">
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    <span>4.8 (125 оценок)</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    <span>20 мин.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card__props">
+                                <time class="blog-card__prop" datetime="2026-03-02">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                    <span>02.03.2026</span>
+                                </time>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eye_icon" />
+                                    </svg>
+                                    <span>1550</span>
+                                </div>
+                            </div>
+
+                            <p class="blog-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                            <p class="blog-card__preview-text">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit
+                                eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus.</p>
+
+                            <div class="blog-card__image">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="blog-card__props">
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    <span>4.8 (125 оценок)</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    <span>20 мин.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card__props">
+                                <time class="blog-card__prop" datetime="2026-03-02">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                    <span>02.03.2026</span>
+                                </time>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eye_icon" />
+                                    </svg>
+                                    <span>1550</span>
+                                </div>
+                            </div>
+
+                            <p class="blog-card__title"><a href="#">The life and Suffering of Sir Brante</a></p>
+
+                            <p class="blog-card__preview-text">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit
+                                eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus.</p>
+
+                            <div class="blog-card__image">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="blog-card__props">
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#star_icon" />
+                                    </svg>
+                                    <span>4.8 (125 оценок)</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+
+                                <div class="blog-card__prop">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    <span>20 мин.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-more">
+                        <a class="button button--primary" href="#">Показать еще</a>
+                    </div>
+
+                    <ul class="pager">
+                        <li>
+                            <span class="pager__link">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="pager__link is-active" href="#">1</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">2</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">3</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">4</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#">5</a>
+                        </li>
+                        <li>
+                            <a class="pager__link" href="#" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="blog__sidebar">
+                    <div class="blog__sidebar-section">
+                        <p class="blog__sidebar-title">Популярные теги</p>
+
+                        <div class="tags">
+                            <a class="tag" href="#">Для нескольких игроков</a>
+                            <a class="tag" href="#">PC</a>
+                            <a class="tag" href="#">Для одного игрока</a>
+                            <a class="tag" href="#">Экшен</a>
+                            <a class="tag" href="#">Насыщенный сюжет</a>
+                            <a class="tag" href="#">SteamOS</a>
+                            <a class="tag" href="#">От третьего лица</a>
+                            <a class="tag" href="#">От первого лица</a>
+                            <a class="tag" href="#">Приключения</a>
+                            <a class="tag" href="#">Атмосферные</a>
+                        </div>
+                    </div>
+
+                    <div class="blog__sidebar-section">
+                        <p class="blog__sidebar-title">Метки</p>
+
+                        <div class="tags">
+                            <a class="tag" href="#">Для нескольких игроков</a>
+                            <a class="tag" href="#">PC</a>
+                            <a class="tag" href="#">Для одного игрока</a>
+                            <a class="tag" href="#">Экшен</a>
+                            <a class="tag" href="#">Насыщенный сюжет</a>
+                            <a class="tag" href="#">SteamOS</a>
+                            <a class="tag" href="#">От третьего лица</a>
+                            <a class="tag" href="#">От первого лица</a>
+                            <a class="tag" href="#">Приключения</a>
+                            <a class="tag" href="#">Атмосферные</a>
+                        </div>
+                    </div>
+
+                    <div class="blog__sidebar-section">
+                        <p class="blog__sidebar-title">Лучшие статьи</p>
+
+                        <div class="last-articles">
+                            <a class="last-article" href="#">
+                                <span class="last-article__title">Что такое инди игры простыми словами</span>
+                                <time class="last-article__date" datetime="2026-01-15">15.01.2026</time>
+                            </a>
+
+                            <a class="last-article" href="#">
+                                <span class="last-article__title">Лучшие инди-игры 2025-2026 года</span>
+                                <time class="last-article__date" datetime="2025-12-20">20.12.2025</time>
+                            </a>
+
+                            <a class="last-article" href="#">
+                                <span class="last-article__title">Лучшие игр ы бродилки на ПК</span>
+                                <time class="last-article__date" datetime="2025-12-10">10.12.2025</time>
+                            </a>
+
+                            <a class="last-article" href="#">
+                                <span class="last-article__title">Самые странные игры на ПК</span>
+                                <time class="last-article__date" datetime="2025-12-01">01.12.2025</time>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__column">
+                <div class="footer__logo"><img src="images/logo.svg" alt="INDIE"></div>
+    
+                <p class="footer__copyrights">©&nbsp;2024<br> ООО ИНДИГЭЙМС, Россия, г. Москва</p>
+            </div>
+    
+            <div class="footer__column">
+                <div class="footer-socials">
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Премиум аккаунт</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Размещения рекламы</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__column">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Техническая поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
